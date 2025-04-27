@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Portfolio</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="./main.js"></script>
+        <link rel="stylesheet" href="./assets/fontawesome-free-6.7.2-web/css/all.min.css">
+    </head>
+    <body>
+        <!-- ------------ Navigation ---------- -->
+        <div id="navigation">
+            <div class="container-nav">
+                <nav>
+                    <!-- <span class="logo">Portfolio</span> -->
+                    <ul>
+                        <li><a href="#header" class="nav-item"><i class="fa-solid fa-house"></i>Home</a></li>
+                        <li><a href="#about" class="nav-item"><i class="fa-solid fa-user"></i>About</a></li>
+                        <li><a href="#timeline" class="nav-item"><i class="fa-solid fa-user"></i>Experience</a></li>
+                        <li><a href="#portfolio" class="nav-item"><i class="fa-solid fa-layer-group"></i>Portfolio</a></li>
+                        <li><a href="#contact" class="nav-item"><i class="fa-solid fa-message"></i>Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <!-- ------------ Header ---------- -->
+        <span class="anchor-offset" id="header"></span>
+        <div id="header">
+            <div class="container">
+                <div class="header-text">
+                    <p>Software Developer</p>
+                    <h1>Hi, I'm <span class="text-highlight">Nikunj Verma</span><br></h1>
+                </div>
+                <a href="./assets/images/background-2.jpeg" download class="btn downloadBtn">Download CV <i class="fa-solid fa-download"></i></a>
+            </div>
+        </div>
+        <!-- ------------ About ----------- -->
+        <span class="anchor-offset" id="about"></span>
+        <h1 class="sub-title">About Me</h1>
+        <section id="about" class="about">
+            <div class="container">
+                <div class="row">
+                    <div class="about-col-1">
+                        <img class="image" alt="photo" src="assets/images/my-photo.jpg">
+                        <!-- <span class="image">Image</span> -->
+                    </div>
+                    <div class="about-col-2">
+                        <p>Experienced Frontend Developer with 4 years of experience in designing and implementing application solutions. Proven track record of delivering successful projects that enhance user experiences through high-quality, efficient code and improved application performance. Ready to leverage my expertise to contribute to innovative solutions in a dynamic environment.
+                        </p>
+                        <!-- <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="openTab('skills')">Skills</p>
+                            <p class="tab-links" onclick="openTab('experience')">Experience</p>
+                            <p class="tab-links" onclick="openTab('education')">Education</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span> UI/UX</span><br>Designer interfaces</li>
+                                <li><span> Web Development</span><br>Design werb dev</li>
+                                <li><span> App Development</span><br>Design app dev</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="experience">
+                            <ul>
+                                <li><span> UI/UX 1</span><br>Designer interfaces</li>
+                                <li><span> Web Development 1</span><br>Design werb dev</li>
+                                <li><span> App Development1 </span><br>Design app dev</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span> UI/UX2</span><br>Designer interfaces</li>
+                                <li><span> Web Development2</span><br>Design werb dev</li>
+                                <li><span> App Development 2</span><br>Design app dev</li>
+                            </ul>
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ------------ Skills ----------- -->
+        <span class="anchor-offset" id="skills"></span>
+        <h1 class="sub-title">Skills</h1>
+        <section id="skills" class="skills">
+            <div class="skills-row">
+                <div class="skills-col">
+                    <div class="skills-col-title">
+                        <span>Programming Languages</span>
+                    </div>
+                    <div class="skills-col-content">
+                        <span>JavaScript</span>
+                        <span>TypeScript</span>
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>SCSS</span>
+                        <span>Java 8</span>
+                        <span>C</span>
+                        <span>XML</span>
+                    </div>
+                </div>
+                <div class="skills-col">
+                    <div class="skills-col-title">
+                        <span>JavaScript Frameworks</span>
+                    </div>
+                    <div class="skills-col-content">
+                        <span>Vue.js</span>
+                        <span>Angular</span>
+                        <span>Sencha Ext JS</span>
+                    </div>
+                </div>
+                <div class="skills-col">
+                    <div class="skills-col-title">
+                        <span>Tools</span>
+                    </div>
+                    <div class="skills-col-content">
+                        <span>Visual Studio Code</span>
+                        <span>IntelliJ IDEA</span>
+                        <span>Postman</span>
+                        <span>Android Studio</span>
+                        <span>Unity</span>
+                        <span>pgAdmin</span>
+                    </div>
+                </div><div class="skills-col">
+                    <div class="skills-col-title">
+                        <span>Database</span>
+                    </div>
+                    <div class="skills-col-content">
+                        <span>PostgreSQL</span>
+                    </div>
+                </div><div class="skills-col">
+                    <div class="skills-col-title">
+                        <span>Version Control</span>
+                    </div>
+                    <div class="skills-col-content">
+                        <span>Git</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- -------- Experience ----------- -->
+        <span class="anchor-offset" id="timeline"></span>
+        <h1 class="sub-title">Experience</h1>
+        <section id="timeline" class="timeline">
+            <div class="timeline-item">
+                <!-- <div class="timeline-dot"></div> -->
+                <div class="timeline-left">
+                <div class="timeline-date">Mar 2021 - present</div>
+                <div class="timeline-title">Consultant, Capgemini</div>
+                <div class="timeline-down showArrow" onclick="showProfileDetail(event)">
+                    <i class="fa-solid fa-angle-down" ></i>
+                </div>
+                <div class="timeline-up" onclick="hideProfileDetail(event)">
+                    <i class="fa-solid fa-angle-up"></i>
+                </div>
+                <div class="timeline-profile-detail">
+                    <div class="profile-item">
+                        <span class="profile-item-name">Consultant</span>
+                        <span class="profile-item-date">Apr 2025 - Present</span>
+                    </div>
+                    <div class="profile-item">
+                        <span class="profile-item-name">Associate Consultant</span>
+                        <span class="profile-item-date">Apr 2023 - Mar 2025</span>
+                    </div>
+                    <div class="profile-item">
+                        <span class="profile-item-name">Senior Analyst</span>
+                        <span class="profile-item-date">Oct 2022 - Mar 2023</span>
+                    </div>
+                    <div class="profile-item">
+                        <span class="profile-item-name">Analyst</span>
+                        <span class="profile-item-date">Mar 2021 - Sep 2022</span>
+                    </div>
+                </div>
+            </div>
+                <div class="timeline-content">
+                    <div class="content-title">
+                        <span>Frontend Developer</span>
+                        <span>Jan 2022 - Present</span>
+                    </div>
+                    <div class="content-desc">
+                        <ul>
+                            <li>
+                                Worked on 4 projects for a leading multinational retail client, delivering solutions used by 1000+ stores worldwide.
+                            </li>
+                            <li>
+                                These solutions improved the customer experience and enhanced operational efficiency for store staff and management.
+                            </li>
+                            <li>
+                                Designed and developed responsive frontend screens from scratch, starting from requirement gathering to go live
+                            </li>
+                            <li>
+                                Ensuring seamless UX across desktop, tablet and mobile platforms with internationalization (i18n).
+                            </li>
+                            <li>
+                                Designed reusable components, reducing development time for new features by 40%.
+                            </li>
+                            <li>
+                                Collaborated cross-functionally to gather requirements and implement innovative frontend solutions for project success.
+                            </li>
+                            <li>
+                                Conducted code reviews and mentored over 10 junior developers, focusing on code quality & continuous improvement.
+                            </li>
+                            <li>
+                                Diagnosed and resolved functionality issues by troubleshooting which reduced production issues by 75%. 
+                            </li>
+                            <i>Key Technologies:</i> Vue js, Angular, JavaScript, TypeScript, HTML, CSS, SCSS
+                        </ul>
+                    </div>
+                    <div class="content-title margin-top-30">
+                        <span>Full stack Developer</span>
+                        <span>Mar 2021 - Dec 2021</span>
+                    </div>
+                    <div class="content-desc">
+                        <ul>
+                            <li>
+                                Contributed to both frontend and backend development, delivering effective web management solutions.
+                            </li>
+                            <li>
+                                Develop robust application that met client requirements, minimizing bugs through targeted validation & optimizing UX.
+                            </li>
+                            <i>Key Technologies:</i> Sencha Ext JS, Angular, Spring Boot, Java 8, PostgreSQL
+                        </ul>
+                    </div>
+                    <!-- started my carrer at Capgemini. started my carrer at Capgemini.started my carrer at Capgemini.started my carrer at Capgemini.
+                    <ul>
+                        <li>Detail 1 list item</li>
+                        <li>Detail 2 list item</li>
+                        <li>Detail 3 list item</li>
+                    </ul> -->
+                </div>
+            </div>
+        </section>
+        <!-- ------------ Certificate ----------- -->
+        <span class="anchor-offset" id="certificate"></span>
+        <h1 class="sub-title">Certificate</h1>
+        <section id="certificate" class="certificate">
+            <div class="certificate-container">
+                <div class="certificate-row">
+                    <div class="certificate-col active-preview">
+                        <div class="certificate-col-time">
+                            <span>Dec 2024</span>
+                            <i class="fa-solid fa-arrow-up-right-from-square" onclick="showCertificatePreview('Extra Mile 2024.pdf', event)"></i>
+                        </div>
+                        <div class="certificate-col-title">
+                            <span>Recognition - Extra Mile</span>
+                        </div>
+                        <div class="certificate-col-by">
+                            <span>By <i>Capgemini India & Spain</i></span>
+                        </div>
+                    </div>
+                    <div class="certificate-col">
+                        <div class="certificate-col-time">
+                            <span>Nov 2022</span>
+                            <i class="fa-solid fa-arrow-up-right-from-square" onclick="showCertificatePreview('Fire fighter 2022.pdf', event)"></i>
+                        </div>
+                        <div class="certificate-col-title">
+                            <span>Appreciation - Firefighter</span>
+                        </div>
+                        <div class="certificate-col-by">
+                            <span>By <i>Capgemini India & Spain</i></span>
+                        </div>
+                    </div>
+                    <div class="certificate-col">
+                        <div class="certificate-col-time">
+                            <span>Jul 2022</span>
+                            <i class="fa-solid fa-arrow-up-right-from-square" onclick="showCertificatePreview('Java Full Stack Level 2.pdf', event)"></i>
+                        </div>
+                        <div class="certificate-col-title">
+                            <span>Java - JavaScript Full Stack Level 2</span>
+                        </div>
+                        <div class="certificate-col-by">
+                            <span>By <i>Capgemini</i></span>
+                        </div>
+                    </div>
+                    <div class="certificate-col">
+                        <div class="certificate-col-time">
+                            <span>Dec 2021</span>
+                            <i class="fa-solid fa-arrow-up-right-from-square" onclick="showCertificatePreview('Java Full Stack Level 1.pdf', event)"></i>
+                        </div>
+                        <div class="certificate-col-title">
+                            <span>Java - JavaScript Full Stack Level 1</span>
+                        </div>
+                        <div class="certificate-col-by">
+                            <span>By <i>Capgemini</i></span>
+                        </div>
+                    </div>
+                    <div class="certificate-col">
+                        <div class="certificate-col-time">
+                            <span>Dec 2021</span>
+                            <i class="fa-solid fa-arrow-up-right-from-square" onclick="showCertificatePreview('AWS CCP.pdf', event)"></i>
+                        </div>
+                        <div class="certificate-col-title">
+                            <span>AWS Cloud Practitioner</span>
+                        </div>
+                        <div class="certificate-col-by">
+                            <span>By <i>Amazon Web Service</i></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="certificate-preview" id="certificate-preview">
+                    <span class="">Loading... </span>
+                    <object data="/assets/certificate/Extra Mile 2024.pdf" type="application/pdf" width="100%" height="100%">
+                        <b>Example fallback content</b>: This browser does not support PDFs. Please download the PDF to view it: 
+                        <a href="/assets/certificate/Extra Mile 2024.pdf">Download PDF</a>
+                     </object>
+                </div>
+            </div>
+        </section>
+        <!-- ------------ Portfolio -------- -->
+        <span class="anchor-offset" id="portfolio"></span>
+        <h1 class="sub-title">Projects</h1>
+        <section id="portfolio" class="portfolio">
+            <div class="portfolio-row">
+                <div class="portfolio-col">
+                    <div class="portfolio-content">
+                        <div class="portfolio-content-title">My Portfolio Website</div>
+                        <div class="portfolio-content-desc">
+                            A portfolio website that showcase my website building skills and my profile.
+                            <div class="portfolio-content-time">Apr 2025</div>
+                        </div>
+                        <div class="portfolio-content-tech">JavaScript, CSS, HTML 5</div>
+                    </div>
+                    <div class="portfolio-layer">
+                        <h3>Portfolio Website</h3>
+                        <a href="https://github.com/VermaNikunj" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="portfolio-col">
+                    <div class="portfolio-content">
+                        <div class="portfolio-content-title">Quiz-News Android App</div>
+                        <div class="portfolio-content-desc">
+                            A multi feature application offering Quizzes on 24 different topics with 3 levels, results, and offline Quotes (Go-Quotes API) and News features like headlines, search, detailed articles.
+                            <div class="portfolio-content-time">Dec 2020</div>
+                        </div>
+                        <div class="portfolio-content-tech">Java, XML, Android Studio, SQLite DB, Retrofit2 Library, Picasso Library</div>
+                    </div>
+                    <div class="portfolio-layer">
+                        <h3>Quiz-News Android App</h3>
+                        <a href="https://github.com/VermaNikunj/QuizNewsApp" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="portfolio-col">
+                    <div class="portfolio-content">
+                        <div class="portfolio-content-title">Interactive Print Media Application using Augmented Reality (AR)</div>
+                        <div class="portfolio-content-desc">An AR mobile app that displays related video on the scanned photo / article, allowing videos to appear as they replace the photos.
+                            <div class="portfolio-content-time">Oct 2019</div>
+                            </div>
+                        <div class="portfolio-content-tech">Unity, Vuforia Engine, Vuforia Database, Android SDK, VuMark, VS Code and Adobe Illustrator</div>
+                    </div>
+                    <div class="portfolio-layer">
+                        <h3>Interactive Print Media Application using Augmented Reality (AR)</h3>
+                        <a href="https://github.com/VermaNikunj/Interactive-Print-Media" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ------------ Education ----------- -->
+        <span class="anchor-offset" id="education"></span>
+        <h1 class="sub-title">Education</h1>
+        <section id="education" class="education">
+            <div class="education-row">
+                <div class="education-col">
+                    <div class="education-col-title">
+                        Bachelor of Technology, Computer Science & Engineering (CSE)
+                        <span>8.02 CGPA</span>
+                    </div>
+                    <div class="education-col-from">
+                        <span><i>Guru Gobind Singh Indraprastha University (GGSIPU), Delhi</i></span>
+                    </div>
+                </div>
+                <div class="education-col">
+                    <div class="education-col-title">
+                        CBSE Class 12th, Science Stream
+                        <span>82.5%</span>
+                    </div>
+                    <div class="education-col-from">
+                        <span><i>Kendriya Vidyalaya No. 1, Delhi Cantt</i></span>
+                    </div>
+                </div>
+                <div class="education-col">
+                    <div class="education-col-title">
+                        CBSE Class 10th
+                        <span>9.2 CGPA</span>
+                    </div>
+                    <div class="education-col-from">
+                        <span><i>Kendriya Vidyalaya No. 1, Delhi Cantt</i></span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ----------- Contact ---------- -->
+        <span class="anchor-offset" id="contact"></span>
+        <h1 class="sub-title">Contact</h1>
+        <section id="contact" class="contact">
+            <div class="contact-row">
+                <div class="contact-left">
+                    <div class="email">
+                        <i class="fa-solid fa-envelope white-icons"></i>
+                        <span>nikunjverma37@gmail.com</span>
+                    </div>
+                    <div class="mobile">
+                        <i class="fa-solid fa-mobile white-icons"></i>
+                        <span>+91-9868214580</span>
+                    </div>
+                    <div class="social-icons">
+                        <a href="https://facebook.com"><i class="fa-brands fa-facebook white-icons"></i></a>
+                        <a href=""><i class="fa-brands fa-instagram white-icons"></i></a>
+                        <a href=""><i class="fa-brands fa-linkedin white-icons"></i></a>
+                        <a href=""><i class="fa-brands fa-github white-icons"></i></a>
+                        <a href=""><i class="fa-brands fa-blogger white-icons"></i></a>
+                    </div>
+                    <a href="./assets/images/background-2.jpeg" download class="btn downloadBtn">Download CV <i class="fa-solid fa-download"></i></a>
+                </div>
+                <div class="contact-right">
+                    <form>
+                        <input type="text" name="name" placeholder="Your name" required>
+                        <input type="email" name="email" placeholder="Your email" required>
+                        <!-- <input type="text" name="subject" placeholder="Subject/Topic" required> -->
+                        <textarea name="Message" rows="4" placeholder="Your message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <!-- <footer>
+            <div class="copyright">
+                <p>Copyright @ NV. Made with love </p>
+            </div>    
+        </footer> -->
+        <script>
+            // const tabLinks = document.getElementsByClassName("tab-links");
+            // const tabContents = document.getElementsByClassName("tab-contents");
+            // // const timelineProfileDetail = document.getElementsByClassName("timeline-profile-detail")
+            // const profileUpArrow = document.getElementsByClassName("timeline-up")
+            // const profileDownArrow = document.getElementsByClassName("timeline-down")
+            
+            function openTab (tabName) {
+                const tabLinks = document.getElementsByClassName("tab-links");
+                const tabContents = document.getElementsByClassName("tab-contents");
+                for(const tabLink of tabLinks) {
+                    tabLink.classList.remove('active-link')
+                }
+                for(const tabContent of tabContents) {
+                    tabContent.classList.remove('active-tab')
+                }
+                event.currentTarget.classList.add('active-link')
+                document.getElementById(tabName).classList.add('active-tab')
+            }
+
+            function showProfileDetail(event) {
+                const { getProfileElement, getDownArrowElement, getUpArrowElement } = getElement(event)
+                getProfileElement[0].classList.add('showProfile')
+                getDownArrowElement[0].classList.remove('showArrow')
+                getUpArrowElement[0].classList.add('showArrow')
+            }
+            function hideProfileDetail(event) {
+                const { getProfileElement, getDownArrowElement, getUpArrowElement } = getElement(event)
+                getProfileElement[0].classList.remove('showProfile')
+                getDownArrowElement[0].classList.add('showArrow')
+                getUpArrowElement[0].classList.remove('showArrow')
+            }
+
+            function getElement (ev) {
+                const getParentElement = ev.target?.parentElement?.parentElement
+                const getProfileElement = getParentElement?.getElementsByClassName('timeline-profile-detail')
+                const getDownArrowElement = getParentElement?.getElementsByClassName('timeline-down')
+                const getUpArrowElement = getParentElement?.getElementsByClassName('timeline-up')
+                return { getProfileElement, getDownArrowElement, getUpArrowElement }
+            }
+
+            function showCertificatePreview(path, event) {
+                const certificateColClass = event.target?.parentElement?.parentElement
+                if (![...certificateColClass.classList].includes('active-preview')) {
+                    const fullPath = `/assets/certificate/${path}`
+                    const getCertiPreviewId = document.getElementById('certificate-preview')
+                    getCertiPreviewId.children[0].classList.add('active')
+                    getCertiPreviewId.children[1].setAttribute('data', fullPath)
+                    const certificateRowClass = certificateColClass?.parentElement?.children
+                    for(const colClass of certificateRowClass) {
+                        colClass.classList.remove('active-preview')
+                    }
+                    certificateColClass.classList.add('active-preview')
+                    setTimeout(() => getCertiPreviewId.children[0].classList.remove('active'), 200)
+                }
+            }
+
+        </script>
+    </body>
+</html>
+
+
+
+

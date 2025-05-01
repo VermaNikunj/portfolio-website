@@ -31,7 +31,9 @@
                     <p>Software Developer</p>
                     <h1>Hi, I'm <span class="red-text">Nikunj Verma</span><br></h1>
                 </div>
-                <a href="./assets/images/background-2.jpeg" download class="btn downloadBtn">Download CV <i class="fa-solid fa-download"></i></a> <!-- TODO change url -->
+                <button class="btn downloadBtn" type="button" onclick="downloadCVEvent()">
+                    Download CV <i class="fa-solid fa-download"></i>
+                </button>
             </div>
         </div>
         <!-- ---------- About ---------- -->
@@ -44,7 +46,8 @@
                         <img class="about-image" alt="my profile pic" src="assets/images/my-photo.jpg">
                     </div>
                     <div class="about-col-2">
-                        <p>Experienced Frontend Developer with 4 years of experience in designing and implementing application solutions. Proven track record of delivering successful projects that enhance user experiences through high-quality, efficient code and improved application performance. Ready to leverage my expertise to contribute to innovative solutions in a dynamic environment.
+                        <p>
+                            Experienced Frontend Developer with 4+ years of experience in designing and implementing web applications. Proven track record of delivering successful projects that enhance user experiences through high-quality, efficient code and improved application performance. Experienced in direct client communication, architecture contribution, and delivering user-centric solutions. Ready to leverage my expertise to contribute to innovative solutions in a dynamic environment.
                         </p>
                     </div>
                 </div>
@@ -66,7 +69,6 @@
                         <span>CSS</span>
                         <span>SCSS</span>
                         <span>Java 8</span>
-                        <span>C</span>
                         <span>XML</span>
                     </div>
                 </div>
@@ -92,14 +94,16 @@
                         <span>Unity</span>
                         <span>pgAdmin</span>
                     </div>
-                </div><div class="skills-col">
+                </div>
+                <div class="skills-col">
                     <div class="skills-col-title">
                         <span>Database</span>
                     </div>
                     <div class="skills-col-content">
                         <span>PostgreSQL</span>
                     </div>
-                </div><div class="skills-col">
+                </div>
+                <div class="skills-col">
                     <div class="skills-col-title">
                         <span>Version Control</span>
                     </div>
@@ -142,55 +146,53 @@
                     </div>
                 </div>
             </div>
-                <div class="timeline-content">
-                    <div class="content-title">
-                        <span>Frontend Developer</span>
-                        <span>Jan 2022 - Present</span>
-                    </div>
-                    <div class="content-desc">
-                        <ul>
-                            <li>
-                                Worked on 4 projects for a leading multinational retail client, delivering solutions used by 1000+ stores worldwide.
-                            </li>
-                            <li>
-                                These solutions improved the customer experience and enhanced operational efficiency for store staff and management.
-                            </li>
-                            <li>
-                                Designed and developed responsive frontend screens from scratch, starting from requirement gathering to go live
-                            </li>
-                            <li>
-                                Ensuring seamless UX across desktop, tablet and mobile platforms with internationalization (i18n).
-                            </li>
-                            <li>
-                                Designed reusable components, reducing development time for new features by 40%.
-                            </li>
-                            <li>
-                                Collaborated cross-functionally to gather requirements and implement innovative frontend solutions for project success.
-                            </li>
-                            <li>
-                                Conducted code reviews and mentored over 10 junior developers, focusing on code quality & continuous improvement.
-                            </li>
-                            <li>
-                                Diagnosed and resolved functionality issues by troubleshooting which reduced production issues by 75%. 
-                            </li>
-                            <i>Key Technologies:</i> Vue js, Angular, JavaScript, TypeScript, HTML, CSS, SCSS
-                        </ul>
-                    </div>
-                    <div class="content-title margin-top-30">
-                        <span>Full stack Developer</span>
-                        <span>Mar 2021 - Dec 2021</span>
-                    </div>
-                    <div class="content-desc">
-                        <ul>
-                            <li>
-                                Contributed to both frontend and backend development, delivering effective web management solutions.
-                            </li>
-                            <li>
-                                Develop robust application that met client requirements, minimizing bugs through targeted validation & optimizing UX.
-                            </li>
-                            <i>Key Technologies:</i> Sencha Ext JS, Angular, Spring Boot, Java 8, PostgreSQL
-                        </ul>
-                    </div>
+            <div class="timeline-content">
+                <div class="content-title">
+                    <span>Role and Responsibilities</span>
+                </div>
+                <div class="content-desc">
+                    <ul>
+                        <li>
+                            Worked on multiple projects for a global retail client, delivering solutions used by 1500+ stores worldwide.
+                        </li>
+                        <li>
+                            Designed and developed responsive frontend screens end to end, from requirement gathering to production release.
+                        </li>
+                        <li>
+                            Ensured seamless UX across desktop, tablet and mobile platforms with internationalization (i18n) support.
+                        </li>
+                        <li>
+                            Built reusable components, reducing development time for new features by 40%.
+                        </li>
+                        <li>
+                            Diagnosed and resolved critical issues, reducing production issues by 75% through code optimization.
+                        </li>
+                        <li>
+                            Participated in architecture discussions to improve application design, functionality and technical strategies.
+                        </li>
+                        <li>
+                            Collaborated with cross-functional teams to gather requirements and deliver innovative frontend solutions.
+                        </li>
+                        <li>
+                            Contributed to both frontend and backend development during initial phase. 
+                        </li>
+                    </ul>
+                </div>
+                <div class="content-title margin-top-30">
+                    <span>Additional Responsibilities</span>
+                </div>
+                <div class="content-desc">
+                    <ul>
+                        <li>
+                            Led the development team, ensuring timely delivery of high-quality project.
+                        </li>
+                        <li>
+                            Managed weekly client communications for project status updates, requirement discussions, and demonstrations.
+                        </li>
+                        <li>
+                            Conducted code reviews and mentored over 10 junior developers, focusing on code quality and standards.
+                        </li>
+                    </ul>
                 </div>
             </div>
         </section>
@@ -279,10 +281,10 @@
                     <div class="portfolio-content">
                         <div class="portfolio-content-title">My Portfolio Website</div>
                         <div class="portfolio-content-desc">
-                            Developed this portfolio website with pure HTML, CSS, and JavaScript. It highlights my work, skills, and achievements in a clean, user-friendly layout. The site is fully responsive and designed for a seamless browsing experience across devices.
-                            <div class="portfolio-content-time">Apr 2025</div>
+                            Designed and developed a personal portfolio website to showcase projects and skills, without frameworks. Focused on creating a lightweight, responsive and user-friendly experience.
+                            <div class="portfolio-content-time">Mar 2025</div>
                         </div>
-                        <div class="portfolio-content-tech">JavaScript, CSS, HTML 5</div>
+                        <div class="portfolio-content-tech">HTML5, CSS, JavaScript, Visual Studio Code, Git</div>
                     </div>
                     <div class="portfolio-layer">
                         <h3>Portfolio Website</h3>
@@ -360,20 +362,22 @@
                 <div class="contact-left">
                     <div class="email">
                         <i class="fa-solid fa-envelope white-icons"></i>
-                        <span>nikunjverma37@gmail.com</span>
+                        <span><a href="mailto:nikunjverma37@gmail.com">nikunjverma37@gmail.com</a></span>
                     </div>
                     <div class="mobile">
                         <i class="fa-solid fa-mobile white-icons"></i>
-                        <span>+91-9868214580</span>
+                        <span><a href="tel:+919868214580">+91-9868214580</a></span>
                     </div>
                     <div class="social-icons">
-                        <a href="https://facebook.com"><i class="fa-brands fa-facebook white-icons"></i></a>
-                        <a href=""><i class="fa-brands fa-instagram white-icons"></i></a>
-                        <a href=""><i class="fa-brands fa-linkedin white-icons"></i></a>
-                        <a href=""><i class="fa-brands fa-github white-icons"></i></a>
-                        <a href=""><i class="fa-brands fa-blogger white-icons"></i></a>
+                        <a href="https://facebook.com" target="_blank"><i class="fa-brands fa-facebook white-icons"></i></a>
+                        <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram white-icons"></i></a>
+                        <a href="https://www.linkedin.com/in/nikunj-verma-4a8252a6/" target="_blank"><i class="fa-brands fa-linkedin white-icons"></i></a>
+                        <a href="https://github.com/VermaNikunj" target="_blank"><i class="fa-brands fa-github white-icons"></i></a>
+                        <!-- <a href="" target="_blank"><i class="fa-brands fa-blogger white-icons"></i></a> -->
                     </div>
-                    <a href="./assets/images/background-2.jpeg" download class="btn downloadBtn">Download CV <i class="fa-solid fa-download"></i></a>
+                    <button class="btn downloadBtn" type="button" onclick="downloadCVEvent()">
+                        Download CV <i class="fa-solid fa-download"></i>
+                    </button>
                 </div>
                 <div class="contact-right">
                     <form>

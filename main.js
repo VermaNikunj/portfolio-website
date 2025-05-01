@@ -48,3 +48,10 @@ function scrollFunction() {
     mybutton.style.display = window.scrollY > 500 ? "block" : "none"
 }
 
+function downloadCVEvent () {
+    const link = document.createElement('a')
+    link.href= 'https://drive.google.com/uc?export=download&id=19goSwo0eSap-_SIQWMgE1i2weAquMMzw'
+    link.target='_blank'
+    link.click()
+}
+

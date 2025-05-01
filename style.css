@@ -657,9 +657,10 @@ nav ul li {
     transition: transform 0.5s;
 }
 
-.contact-left .email span, .contact-left .mobile span {
+.contact-left .email span a, .contact-left .mobile span a {
     cursor: pointer;
     color: #ffffffd1;
+    text-decoration: none;
 }
 .contact-left .email span:hover, .contact-left .mobile span:hover {
     font-weight: 700;
@@ -726,6 +727,10 @@ form input , form textarea {
     color: #fff;
     font-size: 16px;
     border-radius: 6px;
+}
+
+form textarea {
+    resize: none;
 }
 
 

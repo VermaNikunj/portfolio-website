@@ -118,7 +118,7 @@ function languageChangeEvent() {
     loadLanguage(selectedLanguage)
 }
 
-// Lazy loading components and language
+// Lazy loading components
 function lazyLoadComponents() {
     const observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
@@ -142,8 +142,8 @@ function loadContentComponents() {
     })
 }
 
-async function loadComponent(parent, component) {
-    await fetch(`components/${component}`)
+function loadComponent(parent, component) {
+    fetch(`components/${component}`)
         .then (res => {
             return res.text() 
         })

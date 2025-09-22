@@ -57,7 +57,7 @@ function getResumePath () {
 function downloadCVEvent () {
     const link = document.createElement('a')
     link.href = getResumePath()
-    link.download = 'Nikunj Verma Resume Software Developer'
+    link.download = 'Nikunj Verma Resume Software Developer.pdf'
     link.click()
 }
 
@@ -70,9 +70,9 @@ function themeToggleEvent() {
 }
 
 function initialFunction() {
+    loadContentComponents()
     getSavedSettings()
     openSettingMenu(true)
-    loadContentComponents()
 }
 
 function getSavedSettings() {
@@ -117,19 +117,28 @@ function languageChangeEvent() {
     loadLanguage(selectedLanguage)
 }
 
+// Lazy loading components and language
+// function lazyLoadComponents() {
+//     const observer = new IntersectionObserver((entries) => {
+//         entries.forEach(entry => {
+//             if(entry.isIntersecting && entry.target.dataset.component) {
+//                 loadComponent(entry.target, entry.target.dataset.component)
+//                 loadLanguage(localStorage.getItem('language') || 'en')
+//                 observer.unobserve(entry.target)
+//             }
+//         })
+//     })
+
+//     document.querySelectorAll('[data-component]').forEach(element => {
+//         observer.observe(element)
+//     })
+// }
+
+
 function loadContentComponents() {
-    const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            if(entry.isIntersecting && entry.target.dataset.component) {
-                loadComponent(entry.target, entry.target.dataset.component)
-                loadLanguage(localStorage.getItem('language') || 'en')
-                observer.unobserve(entry.target)
-            }
-        })
-    }, {threshold: 0.1})
 
     document.querySelectorAll('[data-component]').forEach(element => {
-        observer.observe(element)
+        loadComponent(element, element.dataset.component)
     })
 }
 

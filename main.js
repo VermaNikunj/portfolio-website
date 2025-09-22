@@ -28,7 +28,7 @@ function hideProfileDetail(event) {
 function showCertificatePreview(path, event) {
     const certificateColClass = event.target?.parentElement?.parentElement
     if (![...certificateColClass.classList].includes('active-preview')) {
-        const fullPath = `/assets/certificate/${path}`
+        const fullPath = `@/assets/certificate/${path}`
         const getCertiPreviewId = document.getElementById('certificate-preview')
         getCertiPreviewId.children[0].classList.add('active')
         getCertiPreviewId.children[1].setAttribute('data', fullPath)
@@ -51,7 +51,7 @@ function scrollFunction() {
 }
 
 function getResumePath () {
-    return '/assets/resume/Nikunj_Verma_Resume.pdf'
+    return '@/assets/resume/Nikunj_Verma_Resume.pdf'
 }
 
 function downloadCVEvent () {

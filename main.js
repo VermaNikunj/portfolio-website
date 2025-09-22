@@ -73,6 +73,7 @@ function initialFunction() {
     loadContentComponents()
     getSavedSettings()
     openSettingMenu(true)
+    lazyLoadComponents()
 }
 
 function getSavedSettings() {
@@ -118,32 +119,31 @@ function languageChangeEvent() {
 }
 
 // Lazy loading components and language
-// function lazyLoadComponents() {
-//     const observer = new IntersectionObserver((entries) => {
-//         entries.forEach(entry => {
-//             if(entry.isIntersecting && entry.target.dataset.component) {
-//                 loadComponent(entry.target, entry.target.dataset.component)
-//                 loadLanguage(localStorage.getItem('language') || 'en')
-//                 observer.unobserve(entry.target)
-//             }
-//         })
-//     })
-
-//     document.querySelectorAll('[data-component]').forEach(element => {
-//         observer.observe(element)
-//     })
-// }
-
-
-function loadContentComponents() {
+function lazyLoadComponents() {
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if(entry.isIntersecting && entry.target.dataset.component && entry.target.dataset.lazy) {
+                loadComponent(entry.target, entry.target.dataset.component)
+                loadLanguage(localStorage.getItem('language') || 'en')
+                observer.unobserve(entry.target)
+            }
+        })
+    })
 
     document.querySelectorAll('[data-component]').forEach(element => {
-        loadComponent(element, element.dataset.component)
+        if(element.dataset.lazy) observer.observe(element)
     })
 }
 
-function loadComponent(parent, component) {
-    fetch(`components/${component}`)
+
+function loadContentComponents() {
+    document.querySelectorAll('[data-component]').forEach(element => {
+        if(!element.dataset.lazy) loadComponent(element, element.dataset.component)
+    })
+}
+
+async function loadComponent(parent, component) {
+    await fetch(`components/${component}`)
         .then (res => {
             return res.text() 
         })

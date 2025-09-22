@@ -1,6 +1,8 @@
 {
     "about": {
-        "description": "Experienced Frontend Developer with 4+ years of experience in designing and implementing web applications. Proven track record of delivering successful projects that enhance user experience through high-quality, efficient code and improved application performance. Experienced in direct client communication, architecture contribution, and delivering user-centric solutions. Ready to leverage my expertise to contribute to innovative solutions in a dynamic environment."
+        "description_1": "Experienced Frontend Developer with 4+ years of experience in designing and implementing web applications. Proven track record of delivering successful projects that enhance user experience through high-quality, efficient code and improved application performance.",
+        "description_2": "Experienced in direct client communication, architecture contribution, and delivering user-centric solutions.",
+        "description_3": "Ready to leverage my expertise to contribute to innovative solutions in a dynamic environment."
     },
     "main": {
         "loading": "Loading... ",

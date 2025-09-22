@@ -1,6 +1,8 @@
 {
     "about": {
-        "description": "Desarrollador Frontend con más de 4 años de experiencia en diseñar e implementar aplicaciones web. Historial comprobado de entrega de proyectos exitosos que mejoran la experiencia del usuario mediante código eficiente y de alta calidad, y mejora del rendimiento de la aplicación. Experiencia en comunicación directa con clientes, contribución en arquitectura, y entrega de soluciones centradas en el usuario. Listo para aprovechar mi experiencia y contribuir a soluciones innovadoras en un entorno dinámico."
+        "description_1": "Desarrollador Frontend con más de 4 años de experiencia en diseñar e implementar aplicaciones web. Historial comprobado de entrega de proyectos exitosos que mejoran la experiencia del usuario mediante código eficiente y de alta calidad, y mejora del rendimiento de la aplicación.",
+        "description_2": "Experiencia en comunicación directa con clientes, contribución en arquitectura, y entrega de soluciones centradas en el usuario.",
+        "description_3": "Listo para aprovechar mi experiencia y contribuir a soluciones innovadoras en un entorno dinámico."
     },
     "main": {
         "loading": "Cargando... ",

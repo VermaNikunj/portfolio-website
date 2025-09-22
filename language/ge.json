@@ -1,6 +1,8 @@
 {
     "about": {
-        "description": "Erfahrener Frontend-Entwickler mit über 4 Jahren Erfahrung in der Gestaltung und Umsetzung von Webanwendungen. Nachweisliche Erfolge bei der Lieferung erfolgreicher Projekte, die die Benutzererfahrung durch hochwertigen, effizienten Code und verbesserte Anwendungsleistung verbessern. Erfahrung in direkter Kundenkommunikation, Mitwirkung an Architekturentscheidungen und Entwicklung benutzerzentrierter Lösungen. Bereit, meine Expertise einzubringen, um innovative Lösungen in einem dynamischen Umfeld zu fördern."
+        "description_1": "Erfahrener Frontend-Entwickler mit über 4 Jahren Erfahrung in der Gestaltung und Umsetzung von Webanwendungen. Nachweisliche Erfolge bei der Lieferung erfolgreicher Projekte, die die Benutzererfahrung durch hochwertigen, effizienten Code und verbesserte Anwendungsleistung verbessern.",
+        "description_2": "Erfahrung in direkter Kundenkommunikation, Mitwirkung an Architekturentscheidungen und Entwicklung benutzerzentrierter Lösungen.",
+        "description_3": "Bereit, meine Expertise einzubringen, um innovative Lösungen in einem dynamischen Umfeld zu fördern."
     },
     "main": {
         "loading": "Lädt...",

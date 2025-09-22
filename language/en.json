@@ -1,0 +1,99 @@
+{
+    "about": {
+        "description": "Experienced Frontend Developer with 4+ years of experience in designing and implementing web applications. Proven track record of delivering successful projects that enhance user experience through high-quality, efficient code and improved application performance. Experienced in direct client communication, architecture contribution, and delivering user-centric solutions. Ready to leverage my expertise to contribute to innovative solutions in a dynamic environment."
+    },
+    "main": {
+        "loading": "Loading... ",
+        "downloadCV": "Download CV",
+        "downloadPDF": "Download PDF",
+        "submit": "Submit"
+    },
+    "navigation": {
+        "home": "Home",
+        "about": "About",
+        "skills": "Skills",
+        "experience": "Experience",
+        "certificate": "Certificate",
+        "projects": "Projects",
+        "education": "Education",
+        "contact": "Contact",
+        "settings": "Settings",
+        "theme": " Theme ",
+        "english": "English",
+        "spanish": "Español",
+        "german": "Deutsch",
+        "french": "Français"
+    },
+    "header": {
+        "profile": "Software Developer",
+        "hi": "Hi, I'm",
+        "myName": "Nikunj Verma"
+    },
+    "certificate": {
+        "by": "By ",
+        "extraMile2024Date": "Dec 2024",
+        "extraMile2024Title": "Recognition - Extra Mile",
+        "extraMile2024By": "Capgemini India & Spain",
+        "fireFighter2022Date": "Nov 2022",
+        "fireFighter2022Title": "Appreciation - Firefighter",
+        "fireFighter2022By": "Capgemini India & Spain",
+        "javaFSLvl22022Date": "Jul 2022",
+        "javaFSLvl22022Title": "Java - JavaScript Full Stack Level 2",
+        "javaFSLvl22022By": "Capgemini",
+        "javaFSLvl12021Date": "Dec 2021",
+        "javaFSLvl12021Title": "Java - JavaScript Full Stack Level 1",
+        "javaFSLvl12021By": "Capgemini",
+        "awsCCP2021Date": "Dec 2021",
+        "awsCCP2021Title": "AWS Cloud Practitioner",
+        "awsCCP2021By": "Amazon Web Service",
+        "fallbackPDFOpening": "This browser does not support PDFs. Please download the PDF to view it:"
+    },
+    "education": {
+        "btechTitle": "Bachelor of Technology, Computer Science & Engineering (CSE)",
+        "btechMarks": "8.02 CGPA",
+        "btechFrom": "Guru Gobind Singh Indraprastha University (GGSIPU), Delhi",
+        "class12Title": "CBSE Class 12th, Science Stream",
+        "class12Marks": "82.5%",
+        "class12From": "Kendriya Vidyalaya No. 1, Delhi Cantt",
+        "class10Title": "CBSE Class 10th",
+        "class10Marks": "9.2 CGPA",
+        "class10From": "Kendriya Vidyalaya No. 1, Delhi Cantt"
+    },
+    "skills": {
+        "programmingLang": "Programming Languages",
+        "jsFrameworks": "JavaScript Frameworks",
+        "tools": "Tools",
+        "database": "Database",
+        "versionControl": "Version Control"
+    },
+    "projects": {
+        "portfolioTitle": "Portfolio Website",
+        "portfolioDesc": "Designed and developed a personal portfolio website to showcase projects and skills, without frameworks. Focused on creating a lightweight, responsive and user-friendly experience.",
+        "portfolioDate": "Mar 2025",
+        "portfolioTech": "HTML5, CSS, JavaScript, Visual Studio Code, Git",
+        "quizNewsAppTitle": "Quiz-News Android App",
+        "quizNewsAppDesc": "A multi feature application offering Quizzes on 24 different topics with 3 levels, results, and offline. Quotes (Go-Quotes API) and News features like headlines, search, detailed articles.",
+        "quizNewsAppDate": "Dec 2020",
+        "quizNewsAppTech": "Java, XML, Android Studio, SQLite DB, Retrofit2 Library, Picasso Library",
+        "printMediaAppTitle": "Interactive Print Media Application using Augmented Reality (AR)",
+        "printMediaAppDesc": "An AR mobile app that displays related video on the scanned photo / article, allowing videos to appear as they replace the photos.",
+        "printMediaAppDate": "Oct 2019",
+        "printMediaAppTech": "Unity, Vuforia Engine, Vuforia Database, Android SDK, VuMark, VS Code and Adobe Illustrator"
+    },
+    "experience": {
+        "capgDate": "Mar 2021 - present",
+        "capgTitle": "Consultant, Capgemini",
+        "capgProfile4Title": "Consultant",
+        "capgProfile4Date": "Apr 2025 - Present",
+        "capgProfile3Title": "Associate Consultant",
+        "capgProfile3Date": "Apr 2023 - Mar 2025",
+        "capgProfile2Title": "Senior Analyst",
+        "capgProfile2Date": "Oct 2022 - Mar 2023",
+        "capgProfile1Title": "Analyst",
+        "capgProfile1Date": "Mar 2021 - Sep 2022",
+        "roleAndResponsibilites": "Role and Responsibilities",
+        "additionalResponsibilities": "Additional Responsibilities",
+        "capgRoleDesc": "<li>Worked on multiple projects for a global retail client, delivering solutions used by over 1,500 stores worldwide.</li><li>Designed and developed responsive frontend screens end-to-end — from requirement gathering to production release.</li><li>Ensured seamless user experience across desktop, tablet, and mobile platforms with internationalization (i18n) support.</li><li>Built reusable components, reducing development time for new features by 40%.</li><li>Diagnosed and resolved critical issues, reducing production incidents by 75% through code optimization.</li><li>Participated in architecture discussions to enhance application design, functionality, and technical strategies.</li><li>Collaborated with cross-functional teams to gather requirements and deliver innovative frontend solutions.</li><li>Contributed to both frontend and backend development during the initial project phases.</li>",
+        "capgRoleDescAdditional": "<li>Led the development team, ensuring timely delivery of high-quality deliverables.</li><li>Managed weekly client communications for project status updates, requirement discussions, and product demonstrations.</li><li>Conducted code reviews and mentored over 10 junior developers, emphasizing code quality and adherence to standards.</li>"
+    }
+}

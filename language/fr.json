@@ -1,0 +1,99 @@
+{
+    "about": {
+        "description": "Développeur Frontend expérimenté avec plus de 4 ans d'expérience dans la conception et la mise en œuvre d'applications web. Antécédents prouvés dans la réalisation de projets réussis qui améliorent l'expérience utilisateur grâce à un code efficace et de haute qualité, ainsi qu'à de meilleures performances des applications. Expérience en communication directe avec le client, contribution à l'architecture et livraison de solutions centrées sur l'utilisateur. Prêt à mettre mon expertise au service de solutions innovantes dans un environnement dynamique."
+    },
+    "main": {
+        "loading": "Chargement... ",
+        "downloadCV": "Télécharger le CV",
+        "downloadPDF": "Télécharger le PDF",
+        "submit": "Soumettre"
+    },
+    "navigation": {
+        "home": "Accueil",
+        "about": "À propos",
+        "skills": "Compétences",
+        "experience": "Expérience",
+        "certificate": "Certificats",
+        "projects": "Projets",
+        "education": "Éducation",
+        "contact": "Contact",
+        "settings": "Paramètres",
+        "theme": " Thème ",
+        "english": "English",
+        "spanish": "Español",
+        "german": "Deutsch",
+        "french": "Français"
+    },
+    "header": {
+        "profile": "Développeur logiciel",
+        "hi": "Salut, je suis",
+        "myName": "Nikunj Verma"
+    },
+    "certificate": {
+        "by": "Par ",
+        "extraMile2024Date": "Déc 2024",
+        "extraMile2024Title": "Reconnaissance - Effort Supplémentaire",
+        "extraMile2024By": "Capgemini Inde & Espagne",
+        "fireFighter2022Date": "Nov 2022",
+        "fireFighter2022Title": "Appréciation - Pompier",
+        "fireFighter2022By": "Capgemini Inde & Espagne",
+        "javaFSLvl22022Date": "Juil 2022",
+        "javaFSLvl22022Title": "Java - Full Stack JavaScript Niveau 2",
+        "javaFSLvl22022By": "Capgemini",
+        "javaFSLvl12021Date": "Déc 2021",
+        "javaFSLvl12021Title": "Java - Full Stack JavaScript Niveau 1",
+        "javaFSLvl12021By": "Capgemini",
+        "awsCCP2021Date": "Déc 2021",
+        "awsCCP2021Title": "AWS Cloud Practitioner",
+        "awsCCP2021By": "Amazon Web Services",
+        "fallbackPDFOpening": "Ce navigateur ne prend pas en charge les fichiers PDF. Veuillez télécharger le PDF pour le visualiser :"
+    },
+    "education": {
+        "btechTitle": "Licence en Technologie, Informatique et Ingénierie (CSE)",
+        "btechMarks": "8,02 CGPA",
+        "btechFrom": "Université Guru Gobind Singh Indraprastha (GGSIPU), Delhi",
+        "class12Title": "Classe 12ème CBSE, Filière Scientifique",
+        "class12Marks": "82,5%",
+        "class12From": "Kendriya Vidyalaya No. 1, Delhi Cantt",
+        "class10Title": "Classe 10ème CBSE",
+        "class10Marks": "9,2 CGPA",
+        "class10From": "Kendriya Vidyalaya No. 1, Delhi Cantt"
+    },
+    "skills": {
+        "programmingLang": "Langages de Programmation",
+        "jsFrameworks": "Frameworks JavaScript",
+        "tools": "Outils",
+        "database": "Base de Données",
+        "versionControl": "Contrôle de Version"
+    },
+    "projects": {
+        "portfolioTitle": "Site Web de Portfolio",
+        "portfolioDesc": "Conception et développement d'un site portfolio personnel pour présenter des projets et des compétences, sans frameworks. Accent mis sur une expérience utilisateur légère, réactive et intuitive.",
+        "portfolioDate": "Mars 2025",
+        "portfolioTech": "HTML5, CSS, JavaScript, Visual Studio Code, Git",
+        "quizNewsAppTitle": "Application Android Quiz-News",
+        "quizNewsAppDesc": "Application multifonction proposant des quiz sur 24 sujets différents avec 3 niveaux, résultats, et support hors ligne. Citations (API Go-Quotes) et fonctionnalités d'actualités telles que les titres, la recherche et les articles détaillés.",
+        "quizNewsAppDate": "Déc 2020",
+        "quizNewsAppTech": "Java, XML, Android Studio, Base de données SQLite, Bibliothèque Retrofit2, Bibliothèque Picasso",
+        "printMediaAppTitle": "Application de Médias Imprimés Interactive utilisant la Réalité Augmentée (AR)",
+        "printMediaAppDesc": "Application mobile en RA affichant une vidéo liée à la photo/article scanné, faisant apparaître les vidéos à la place des images.",
+        "printMediaAppDate": "Oct 2019",
+        "printMediaAppTech": "Unity, Moteur Vuforia, Base de données Vuforia, SDK Android, VuMark, VS Code et Adobe Illustrator"
+    },
+    "experience": {
+        "capgDate": "Mars 2021 - présent",
+        "capgTitle": "Consultant, Capgemini",
+        "capgProfile4Title": "Consultant",
+        "capgProfile4Date": "Avr 2025 - Présent",
+        "capgProfile3Title": "Consultant Associé",
+        "capgProfile3Date": "Avr 2023 - Mars 2025",
+        "capgProfile2Title": "Analyste Senior",
+        "capgProfile2Date": "Oct 2022 - Mars 2023",
+        "capgProfile1Title": "Analyste",
+        "capgProfile1Date": "Mars 2021 - Sept 2022",
+        "roleAndResponsibilites": "Rôle et Responsabilités",
+        "additionalResponsibilities": "Responsabilités Supplémentaires",
+        "capgRoleDesc": "<li>Travaillé sur plusieurs projets pour un client de vente au détail mondial, fournissant des solutions utilisées par plus de 1 500 magasins dans le monde entier.</li><li>Conception et développement d'interfaces frontend réactives de bout en bout — de la collecte des exigences à la mise en production.</li><li>Assuré une expérience utilisateur fluide sur les plateformes de bureau, tablette et mobile avec prise en charge de l'internationalisation (i18n).</li><li>Création de composants réutilisables, réduisant le temps de développement des nouvelles fonctionnalités de 40 %.</li><li>Diagnostiqué et résolu des problèmes critiques, réduisant les incidents de production de 75 % grâce à l'optimisation du code.</li><li>Participation à des discussions d'architecture pour améliorer la conception, les fonctionnalités et les stratégies techniques de l'application.</li><li>Collaboration avec des équipes interfonctionnelles pour recueillir les besoins et fournir des solutions frontend innovantes.</li><li>Contributions au développement frontend et backend durant les phases initiales du projet.</li>",
+        "capgRoleDescAdditional": "<li>Dirigé l'équipe de développement, assurant la livraison ponctuelle de livrables de haute qualité.</li><li>Géré la communication hebdomadaire avec le client pour les mises à jour de projet, les discussions sur les exigences et les démonstrations.</li><li>Effectué des revues de code et encadré plus de 10 développeurs juniors, en mettant l'accent sur la qualité du code et le respect des normes.</li>"
+    }
+}

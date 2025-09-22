@@ -1,0 +1,60 @@
+<div class="navigation-container">
+    <nav>
+        <ul>
+            <li>
+                <a href="#header" class="nav-item" aria-label="nav header">
+                    <i class="fa-solid fa-house"></i>
+                    <span data-i18n="navigation.home"></span>
+                </a>
+            </li>
+            <li>
+                <a href="#about" class="nav-item" aria-label="nav about">
+                    <i class="fa-solid fa-user"></i>
+                    <span data-i18n="navigation.about"></span>
+                </a>
+            </li>
+            <li>
+                <a href="#timeline" class="nav-item" aria-label="nav experience">
+                    <i class="fa-solid fa-building"></i>
+                    <span data-i18n="navigation.experience"></span>
+                </a>
+            </li>
+            <li>
+                <a href="#portfolio" class="nav-item" aria-label="nav project">
+                    <i class="fa-solid fa-layer-group"></i>
+                    <span data-i18n="navigation.projects"></span>
+                </a>
+            </li>
+            <li>
+                <a href="#contact" class="nav-item" aria-label="nav contact">
+                    <i class="fa-solid fa-message"></i>
+                    <span data-i18n="navigation.contact"></span>
+                </a>
+            </li>
+        </ul>
+        <ul>
+            <li class="nav-item-right" onclick="openSettingMenu()">
+                <i class="fa-solid fa-gear"></i>
+                <span data-i18n="navigation.settings"></span>
+            </li>
+        </ul>
+    </nav>
+    <div class="setting-menu" id="setting-menu" onmouseleave="openSettingMenu()" >
+        <button class="btn theme-toggle-btn" type="button" onclick="themeToggleEvent()">
+            <span class="dark-theme-btn">
+                <i class="far fa-sun"></i>
+                <span data-i18n="navigation.theme"></span>
+            </span>
+            <span class="light-theme-btn active">
+                <span data-i18n="navigation.theme"></span>
+                <i class="fas fa-moon"></i>
+            </span>
+        </button>
+        <select id="language" name="language" class="language-select" onchange="languageChangeEvent()">
+            <option value="en" data-i18n="navigation.english"></option>
+            <option value="es" data-i18n="navigation.spanish"></option>
+            <option value="ge" data-i18n="navigation.german"></option>
+            <option value="fr" data-i18n="navigation.french"></option>
+        </select>
+    </div>
+</div>

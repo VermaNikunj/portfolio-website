@@ -1,6 +1,5 @@
 export function certificateComponentFunction(textData) {
 	loadCertificateList(textData)
-	loadCertificateShowPreview(textData)
 }
 
 function loadCertificateList(textData) {
@@ -66,18 +65,4 @@ function getColByHTML(title) {
 	const frag = document.createDocumentFragment()
 	frag.append(span, italic)
 	return frag
-}
-
-function loadCertificateShowPreview(textData) {
-	const certificatePreviewElement = document.getElementById('certificate-preview')
-	if (certificatePreviewElement) {
-		const fileName = textData.fileNameList[0]
-		const fullPath = `assets/certificate/${fileName}`
-		if (certificatePreviewElement?.children[1] && certificatePreviewElement?.children[1]?.children[1]) {
-			certificatePreviewElement?.children[1]?.setAttribute('data', fullPath)
-			certificatePreviewElement?.children[1]?.setAttribute('aria-label', `PDF Viewer for ${fileName}`)
-			certificatePreviewElement?.children[1]?.children[1]?.setAttribute('href', fullPath)
-			certificatePreviewElement?.children[1]?.children[1]?.setAttribute('aria-label', `Download ${fileName} PDF`)
-		}
-	}
 }

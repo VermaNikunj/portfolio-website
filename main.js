@@ -30,7 +30,7 @@ function showCertificatePreview(path, event) {
 	if (![...certificateColClass.classList].includes('active-preview')) {
 		const fullPath = `assets/certificate/${path}`
 		const getCertiPreviewId = document.getElementById('certificate-preview')
-		if (getCertiPreviewId) {
+		if (getCertiPreviewId && getCertiPreviewId.children.length > 1) {
 			getCertiPreviewId.children[0].classList.add('active')
 			getCertiPreviewId.children[1]?.setAttribute('data', fullPath)
 			getCertiPreviewId.children[1]?.children[1]?.setAttribute('href', fullPath)
@@ -182,6 +182,34 @@ function setLoadedLanguageText(data) {
 async function callImportedAndLoadLang(textData, isStart) {
 	if (isStart) {
 		await importComponent(textData)
+		loadCertificateShowComponent(textData?.certificate)
 	}
 	setLoadedLanguageText(textData)
+}
+
+
+function loadCertificateShowComponent(textData) {
+	const certificatePreviewElement = document.getElementById('certificate-preview')
+	if (certificatePreviewElement) {
+		const fileName = textData.fileNameList[0]
+		const fullPath = `assets/certificate/${fileName}`
+		const objectElement = document.createElement('object')
+		objectElement.setAttribute('data', fullPath)
+		objectElement.setAttribute('type', 'application/pdf')
+		objectElement.setAttribute('width', '100%')
+		objectElement.setAttribute('height', '100%')
+		objectElement.setAttribute('aria-label', `PDF Viewer for ${fileName}`)
+
+		const spanElement = document.createElement('span')
+		spanElement.setAttribute('data-i18n', 'certificate.fallbackPDFOpening')
+		spanElement.classList.add('fallbackPDFOpening')
+
+		const anchorElement = document.createElement('a')
+		anchorElement.href = fullPath
+		anchorElement.setAttribute('aria-label', `Download ${fileName} PDF`)
+		anchorElement.setAttribute('data-i18n', 'certificate.downloadPDF')
+
+		objectElement.append(spanElement, anchorElement)
+		certificatePreviewElement.appendChild(objectElement)
+	}
 }

@@ -1,5 +1,6 @@
 {
     "about": {
+        "numberOfDescriptions": 3,
         "description_1": "Développeur Frontend expérimenté avec plus de 4 ans d'expérience dans la conception et la mise en œuvre d'applications web. Antécédents prouvés dans la réalisation de projets réussis qui améliorent l'expérience utilisateur grâce à un code efficace et de haute qualité, ainsi qu'à de meilleures performances des applications.",
         "description_2": "Expérience en communication directe avec le client, contribution à l'architecture et livraison de solutions centrées sur l'utilisateur.",
         "description_3": "Prêt à mettre mon expertise au service de solutions innovantes dans un environnement dynamique."
@@ -10,8 +11,13 @@
         "downloadPDF": "Télécharger le PDF",
         "submit": "Soumettre"
     },
+    "resume": {
+        "pathLink": "assets/resume/",
+        "fileName": "Nikunj_Verma_Resume.pdf",
+        "downloadFileName": "Nikunj Verma Resume Software Developer.pdf"
+    },
     "navigation": {
-        "home": "Accueil",
+        "header": "Accueil",
         "about": "À propos",
         "skills": "Compétences",
         "experience": "Expérience",
@@ -24,7 +30,39 @@
         "english": "English",
         "spanish": "Español",
         "german": "Deutsch",
-        "french": "Français"
+        "french": "Français",
+        "leftNavList": [
+            "header",
+            "about",
+            "experience",
+            "projects",
+            "contact"
+        ],
+        "leftNavIconList": [
+            "fa-house",
+            "fa-user",
+            "fa-building",
+            "fa-layer-group",
+            "fa-message"
+        ],
+        "rightNavList": [
+            "settings"
+        ],
+        "rightNavIconList": [
+            "fa-gear"
+        ],
+        "languageOptionsValueList": [
+            "en",
+            "es",
+            "ge",
+            "fr"
+        ],
+        "languageOptionsKeyList": [
+            "english",
+            "spanish",
+            "german",
+            "french"
+        ]
     },
     "header": {
         "profile": "Développeur logiciel",
@@ -33,6 +71,25 @@
     },
     "certificate": {
         "by": "Par ",
+        "titleList": [
+            "javaFSLvl32025",
+            "extraMile2024",
+            "fireFighter2022",
+            "javaFSLvl22022",
+            "javaFSLvl12021",
+            "awsCCP2021"
+        ],
+        "fileNameList": [
+            "Java_Full_Stack_Level_3.pdf",
+            "Extra_Mile_2024.pdf",
+            "Fire_Fighter_2022.pdf",
+            "Java_Full_Stack_Level_2.pdf",
+            "Java_Full_Stack_Level_1.pdf",
+            "AWS_CCP.pdf"
+        ],
+        "javaFSLvl32025Date": "Sep 2025",
+        "javaFSLvl32025Title": "Java - Full Stack JavaScript Niveau 3",
+        "javaFSLvl32025By": "Capgemini",
         "extraMile2024Date": "Déc 2024",
         "extraMile2024Title": "Reconnaissance - Effort Supplémentaire",
         "extraMile2024By": "Capgemini Inde & Espagne",
@@ -51,6 +108,11 @@
         "fallbackPDFOpening": "Ce navigateur ne prend pas en charge les fichiers PDF. Veuillez télécharger le PDF pour le visualiser :"
     },
     "education": {
+        "titleList": [
+            "btech",
+            "class12",
+            "class10"
+        ],
         "btechTitle": "Licence en Technologie, Informatique et Ingénierie (CSE)",
         "btechMarks": "8,02 CGPA",
         "btechFrom": "Université Guru Gobind Singh Indraprastha (GGSIPU), Delhi",
@@ -66,9 +128,57 @@
         "jsFrameworks": "Frameworks JavaScript",
         "tools": "Outils",
         "database": "Base de Données",
-        "versionControl": "Contrôle de Version"
+        "versionControl": "Contrôle de Version",
+        "skillsList": {
+            "programmingLang": [
+                "JavaScript",
+                "TypeScript",
+                "HTML",
+                "CSS",
+                "SCSS",
+                "Java 8",
+                "XML"
+            ],
+            "jsFrameworks": [
+                "Vue.js",
+                "Angular",
+                "Sencha Ext JS"
+            ],
+            "tools": [
+                "Visual Studio Code",
+                "IntelliJ IDEA",
+                "Postman",
+                "pgAdmin",
+                "Android Studio",
+                "Unity",
+                "Vuforia"
+            ],
+            "database": [
+                "PostgreSQL"
+            ],
+            "versionControl": [
+                "Git"
+            ]
+        }
     },
     "projects": {
+        "titleList": [
+            "portfolio",
+            "quizNewsApp",
+            "printMediaApp"
+        ],
+        "linkList": [
+            "https://github.com/VermaNikunj/portfolio-website",
+            "https://github.com/VermaNikunj/QuizNewsApp",
+            "https://github.com/VermaNikunj/Interactive-Print-Media"
+        ],
+        "defaultLink": "https://github.com/VermaNikunj",
+        "ariaLabelList": [
+            "portfolio website github link",
+            "quiz news app github link",
+            "interactive project media app using AR github link"
+        ],
+        "defaultAriaLabel": "Project link",
         "portfolioTitle": "Site Web de Portfolio",
         "portfolioDesc": "Conception et développement d'un site portfolio personnel pour présenter des projets et des compétences, sans frameworks. Accent mis sur une expérience utilisateur légère, réactive et intuitive.",
         "portfolioDate": "Mars 2025",
@@ -76,26 +186,45 @@
         "quizNewsAppTitle": "Application Android Quiz-News",
         "quizNewsAppDesc": "Application multifonction proposant des quiz sur 24 sujets différents avec 3 niveaux, résultats, et support hors ligne. Citations (API Go-Quotes) et fonctionnalités d'actualités telles que les titres, la recherche et les articles détaillés.",
         "quizNewsAppDate": "Déc 2020",
-        "quizNewsAppTech": "Java, XML, Android Studio, Base de données SQLite, Bibliothèque Retrofit2, Bibliothèque Picasso",
+        "quizNewsAppTech": "Java, XML, Android Studio, SQLite DB, Retrofit2 Library, Picasso Library",
         "printMediaAppTitle": "Application de Médias Imprimés Interactive utilisant la Réalité Augmentée (AR)",
         "printMediaAppDesc": "Application mobile en RA affichant une vidéo liée à la photo/article scanné, faisant apparaître les vidéos à la place des images.",
         "printMediaAppDate": "Oct 2019",
-        "printMediaAppTech": "Unity, Moteur Vuforia, Base de données Vuforia, SDK Android, VuMark, VS Code et Adobe Illustrator"
+        "printMediaAppTech": "Unity, Vuforia Engine, Vuforia Database, Android SDK, VuMark, VS Code and Adobe Illustrator"
     },
     "experience": {
-        "capgDate": "Mars 2021 - présent",
-        "capgTitle": "Consultant, Capgemini",
-        "capgProfile4Title": "Consultant",
-        "capgProfile4Date": "Avr 2025 - Présent",
-        "capgProfile3Title": "Consultant Associé",
-        "capgProfile3Date": "Avr 2023 - Mars 2025",
-        "capgProfile2Title": "Analyste Senior",
-        "capgProfile2Date": "Oct 2022 - Mars 2023",
-        "capgProfile1Title": "Analyste",
-        "capgProfile1Date": "Mars 2021 - Sept 2022",
         "roleAndResponsibilites": "Rôle et Responsabilités",
         "additionalResponsibilities": "Responsabilités Supplémentaires",
-        "capgRoleDesc": "<li>Travaillé sur plusieurs projets pour un client de vente au détail mondial, fournissant des solutions utilisées par plus de 1 500 magasins dans le monde entier.</li><li>Conception et développement d'interfaces frontend réactives de bout en bout — de la collecte des exigences à la mise en production.</li><li>Assuré une expérience utilisateur fluide sur les plateformes de bureau, tablette et mobile avec prise en charge de l'internationalisation (i18n).</li><li>Création de composants réutilisables, réduisant le temps de développement des nouvelles fonctionnalités de 40 %.</li><li>Diagnostiqué et résolu des problèmes critiques, réduisant les incidents de production de 75 % grâce à l'optimisation du code.</li><li>Participation à des discussions d'architecture pour améliorer la conception, les fonctionnalités et les stratégies techniques de l'application.</li><li>Collaboration avec des équipes interfonctionnelles pour recueillir les besoins et fournir des solutions frontend innovantes.</li><li>Contributions au développement frontend et backend durant les phases initiales du projet.</li>",
-        "capgRoleDescAdditional": "<li>Dirigé l'équipe de développement, assurant la livraison ponctuelle de livrables de haute qualité.</li><li>Géré la communication hebdomadaire avec le client pour les mises à jour de projet, les discussions sur les exigences et les démonstrations.</li><li>Effectué des revues de code et encadré plus de 10 développeurs juniors, en mettant l'accent sur la qualité du code et le respect des normes.</li>"
+        "list": [
+            "capg"
+        ],
+        "capgDate": "Mars 2021 - présent",
+        "capgTitle": "Consultant, Capgemini",
+        "numberOfcapgProfile": 4,
+        "capgProfileTitle_4": "Consultant",
+        "capgProfileDate_4": "Avr 2025 - Présent",
+        "capgProfileTitle_3": "Consultant Associé",
+        "capgProfileDate_3": "Avr 2023 - Mars 2025",
+        "capgProfileTitle_2": "Analyste Senior",
+        "capgProfileDate_2": "Oct 2022 - Mars 2023",
+        "capgProfileTitle_1": "Analyste",
+        "capgProfileDate_1": "Mars 2021 - Sept 2022",
+        "capgContent": [
+            "roleAndResponsibilites",
+            "additionalResponsibilities"
+        ],
+        "numberOfcapgroleAndResponsibilites": 8,
+        "numberOfcapgadditionalResponsibilities": 3,
+        "capgroleAndResponsibilites_1": "Travaillé sur de nombreux projets pour un client international du secteur de la distribution, en fournissant des solutions utilisées par plus de 1 500 magasins dans le monde.",
+        "capgroleAndResponsibilites_2": "Conçu et développé des interfaces utilisateur responsives de bout en bout, de la collecte des besoins à la mise en production.",
+        "capgroleAndResponsibilites_3": "Garanti une expérience utilisateur optimale sur les plateformes desktop, tablette et mobile, avec prise en charge de l'internationalisation (i18n).",
+        "capgroleAndResponsibilites_4": "Créé des composants réutilisables, réduisant ainsi le temps de développement des nouvelles fonctionnalités de 40 %.",
+        "capgroleAndResponsibilites_5": "Diagnostic et résolution de problèmes critiques, réduction des incidents de production de 75 % grâce à l'optimisation du code.",
+        "capgroleAndResponsibilites_6": "Participation aux discussions d'architecture pour améliorer la conception, les fonctionnalités et les stratégies techniques de l'application.",
+        "capgroleAndResponsibilites_7": "Collaboration avec des équipes pluridisciplinaires pour recueillir les besoins et fournir des solutions front-end innovantes.",
+        "capgroleAndResponsibilites_8": "Contribution au développement front-end et back-end lors des phases initiales du projet.",
+        "capgadditionalResponsibilities_1": "Dirigé l’équipe de développement, garantissant la livraison de livrables de haute qualité dans les délais impartis.",
+        "capgadditionalResponsibilities_2": "Géré les communications hebdomadaires avec le client concernant l’état d’avancement du projet, les discussions sur les exigences et les démonstrations du produit.",
+        "capgadditionalResponsibilities_3": "Effectué des revues de code et encadré plus de 10 développeurs juniors, en insistant sur la qualité du code et le respect des normes."
     }
 }

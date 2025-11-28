@@ -1,5 +1,6 @@
 {
     "about": {
+        "numberOfDescriptions": 3,
         "description_1": "Experienced Frontend Developer with 4+ years of experience in designing and implementing web applications. Proven track record of delivering successful projects that enhance user experience through high-quality, efficient code and improved application performance.",
         "description_2": "Experienced in direct client communication, architecture contribution, and delivering user-centric solutions.",
         "description_3": "Ready to leverage my expertise to contribute to innovative solutions in a dynamic environment."
@@ -10,8 +11,13 @@
         "downloadPDF": "Download PDF",
         "submit": "Submit"
     },
+    "resume": {
+        "pathLink": "assets/resume/",
+        "fileName": "Nikunj_Verma_Resume.pdf",
+        "downloadFileName": "Nikunj Verma Resume Software Developer.pdf"
+    },
     "navigation": {
-        "home": "Home",
+        "header": "Home",
         "about": "About",
         "skills": "Skills",
         "experience": "Experience",
@@ -24,7 +30,39 @@
         "english": "English",
         "spanish": "Español",
         "german": "Deutsch",
-        "french": "Français"
+        "french": "Français",
+        "leftNavList": [
+            "header",
+            "about",
+            "experience",
+            "projects",
+            "contact"
+        ],
+        "leftNavIconList": [
+            "fa-house",
+            "fa-user",
+            "fa-building",
+            "fa-layer-group",
+            "fa-message"
+        ],
+        "rightNavList": [
+            "settings"
+        ],
+        "rightNavIconList": [
+            "fa-gear"
+        ],
+        "languageOptionsValueList": [
+            "en",
+            "es",
+            "ge",
+            "fr"
+        ],
+        "languageOptionsKeyList": [
+            "english",
+            "spanish",
+            "german",
+            "french"
+        ]
     },
     "header": {
         "profile": "Software Developer",
@@ -33,6 +71,25 @@
     },
     "certificate": {
         "by": "By ",
+        "titleList": [
+            "javaFSLvl32025",
+            "extraMile2024",
+            "fireFighter2022",
+            "javaFSLvl22022",
+            "javaFSLvl12021",
+            "awsCCP2021"
+        ],
+        "fileNameList": [
+            "Java_Full_Stack_Level_3.pdf",
+            "Extra_Mile_2024.pdf",
+            "Fire_Fighter_2022.pdf",
+            "Java_Full_Stack_Level_2.pdf",
+            "Java_Full_Stack_Level_1.pdf",
+            "AWS_CCP.pdf"
+        ],
+        "javaFSLvl32025Date": "Sep 2025",
+        "javaFSLvl32025Title": "Java-JavaScript Full Stack Level 3",
+        "javaFSLvl32025By": "Capgemini",
         "extraMile2024Date": "Dec 2024",
         "extraMile2024Title": "Recognition - Extra Mile",
         "extraMile2024By": "Capgemini India & Spain",
@@ -51,6 +108,11 @@
         "fallbackPDFOpening": "This browser does not support PDFs. Please download the PDF to view it:"
     },
     "education": {
+        "titleList": [
+            "btech",
+            "class12",
+            "class10"
+        ],
         "btechTitle": "Bachelor of Technology, Computer Science & Engineering (CSE)",
         "btechMarks": "8.02 CGPA",
         "btechFrom": "Guru Gobind Singh Indraprastha University (GGSIPU), Delhi",
@@ -66,9 +128,57 @@
         "jsFrameworks": "JavaScript Frameworks",
         "tools": "Tools",
         "database": "Database",
-        "versionControl": "Version Control"
+        "versionControl": "Version Control",
+        "skillsList": {
+            "programmingLang": [
+                "JavaScript",
+                "TypeScript",
+                "HTML",
+                "CSS",
+                "SCSS",
+                "Java 8",
+                "XML"
+            ],
+            "jsFrameworks": [
+                "Vue.js",
+                "Angular",
+                "Sencha Ext JS"
+            ],
+            "tools": [
+                "Visual Studio Code",
+                "IntelliJ IDEA",
+                "Postman",
+                "pgAdmin",
+                "Android Studio",
+                "Unity",
+                "Vuforia"
+            ],
+            "database": [
+                "PostgreSQL"
+            ],
+            "versionControl": [
+                "Git"
+            ]
+        }
     },
     "projects": {
+        "titleList": [
+            "portfolio",
+            "quizNewsApp",
+            "printMediaApp"
+        ],
+        "linkList": [
+            "https://github.com/VermaNikunj/portfolio-website",
+            "https://github.com/VermaNikunj/QuizNewsApp",
+            "https://github.com/VermaNikunj/Interactive-Print-Media"
+        ],
+        "defaultLink": "https://github.com/VermaNikunj",
+        "ariaLabelList": [
+            "portfolio website github link",
+            "quiz news app github link",
+            "interactive project media app using AR github link"
+        ],
+        "defaultAriaLabel": "Project link",
         "portfolioTitle": "Portfolio Website",
         "portfolioDesc": "Designed and developed a personal portfolio website to showcase projects and skills, without frameworks. Focused on creating a lightweight, responsive and user-friendly experience.",
         "portfolioDate": "Mar 2025",
@@ -83,19 +193,38 @@
         "printMediaAppTech": "Unity, Vuforia Engine, Vuforia Database, Android SDK, VuMark, VS Code and Adobe Illustrator"
     },
     "experience": {
-        "capgDate": "Mar 2021 - present",
-        "capgTitle": "Consultant, Capgemini",
-        "capgProfile4Title": "Consultant",
-        "capgProfile4Date": "Apr 2025 - Present",
-        "capgProfile3Title": "Associate Consultant",
-        "capgProfile3Date": "Apr 2023 - Mar 2025",
-        "capgProfile2Title": "Senior Analyst",
-        "capgProfile2Date": "Oct 2022 - Mar 2023",
-        "capgProfile1Title": "Analyst",
-        "capgProfile1Date": "Mar 2021 - Sep 2022",
         "roleAndResponsibilites": "Role and Responsibilities",
         "additionalResponsibilities": "Additional Responsibilities",
-        "capgRoleDesc": "<li>Worked on multiple projects for a global retail client, delivering solutions used by over 1,500 stores worldwide.</li><li>Designed and developed responsive frontend screens end-to-end — from requirement gathering to production release.</li><li>Ensured seamless user experience across desktop, tablet, and mobile platforms with internationalization (i18n) support.</li><li>Built reusable components, reducing development time for new features by 40%.</li><li>Diagnosed and resolved critical issues, reducing production incidents by 75% through code optimization.</li><li>Participated in architecture discussions to enhance application design, functionality, and technical strategies.</li><li>Collaborated with cross-functional teams to gather requirements and deliver innovative frontend solutions.</li><li>Contributed to both frontend and backend development during the initial project phases.</li>",
-        "capgRoleDescAdditional": "<li>Led the development team, ensuring timely delivery of high-quality deliverables.</li><li>Managed weekly client communications for project status updates, requirement discussions, and product demonstrations.</li><li>Conducted code reviews and mentored over 10 junior developers, emphasizing code quality and adherence to standards.</li>"
+        "list": [
+            "capg"
+        ],
+        "capgDate": "Mar 2021 - present",
+        "capgTitle": "Consultant, Capgemini",
+        "numberOfcapgProfile": 4,
+        "capgProfileTitle_4": "Consultant",
+        "capgProfileDate_4": "Apr 2025 - Present",
+        "capgProfileTitle_3": "Associate Consultant",
+        "capgProfileDate_3": "Apr 2023 - Mar 2025",
+        "capgProfileTitle_2": "Senior Analyst",
+        "capgProfileDate_2": "Oct 2022 - Mar 2023",
+        "capgProfileTitle_1": "Analyst",
+        "capgProfileDate_1": "Mar 2021 - Sep 2022",
+        "capgContent": [
+            "roleAndResponsibilites",
+            "additionalResponsibilities"
+        ],
+        "numberOfcapgroleAndResponsibilites": 8,
+        "numberOfcapgadditionalResponsibilities": 3,
+        "capgroleAndResponsibilites_1": "Worked on multiple projects for a global retail client, delivering solutions used by over 1,500 stores worldwide.",
+        "capgroleAndResponsibilites_2": "Designed and developed responsive frontend screens end-to-end — from requirement gathering to production release.",
+        "capgroleAndResponsibilites_3": "Ensured seamless user experience across desktop, tablet, and mobile platforms with internationalization (i18n) support.",
+        "capgroleAndResponsibilites_4": "Built reusable components, reducing development time for new features by 40%.",
+        "capgroleAndResponsibilites_5": "Diagnosed and resolved critical issues, reducing production incidents by 75% through code optimization.",
+        "capgroleAndResponsibilites_6": "Participated in architecture discussions to enhance application design, functionality, and technical strategies.",
+        "capgroleAndResponsibilites_7": "Collaborated with cross-functional teams to gather requirements and deliver innovative frontend solutions.",
+        "capgroleAndResponsibilites_8": "Contributed to both frontend and backend development during the initial project phases.",
+        "capgadditionalResponsibilities_1": "Led the development team, ensuring timely delivery of high-quality deliverables.",
+        "capgadditionalResponsibilities_2": "Managed weekly client communications for project status updates, requirement discussions, and product demonstrations.",
+        "capgadditionalResponsibilities_3": "Conducted code reviews and mentored over 10 junior developers, emphasizing code quality and adherence to standards."
     }
 }

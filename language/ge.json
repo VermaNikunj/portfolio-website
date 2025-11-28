@@ -1,5 +1,6 @@
 {
     "about": {
+        "numberOfDescriptions": 3,
         "description_1": "Erfahrener Frontend-Entwickler mit über 4 Jahren Erfahrung in der Gestaltung und Umsetzung von Webanwendungen. Nachweisliche Erfolge bei der Lieferung erfolgreicher Projekte, die die Benutzererfahrung durch hochwertigen, effizienten Code und verbesserte Anwendungsleistung verbessern.",
         "description_2": "Erfahrung in direkter Kundenkommunikation, Mitwirkung an Architekturentscheidungen und Entwicklung benutzerzentrierter Lösungen.",
         "description_3": "Bereit, meine Expertise einzubringen, um innovative Lösungen in einem dynamischen Umfeld zu fördern."
@@ -10,8 +11,13 @@
         "downloadPDF": "PDF herunterladen",
         "submit": "Absenden"
     },
+    "resume": {
+        "pathLink": "assets/resume/",
+        "fileName": "Nikunj_Verma_Resume.pdf",
+        "downloadFileName": "Nikunj Verma Resume Software Developer.pdf"
+    },
     "navigation": {
-        "home": "Startseite",
+        "header": "Startseite",
         "about": "Über mich",
         "skills": "Fähigkeiten",
         "experience": "Erfahrung",
@@ -24,7 +30,39 @@
         "english": "English",
         "spanish": "Español",
         "german": "Deutsch",
-        "french": "Français"
+        "french": "Français",
+        "leftNavList": [
+            "header",
+            "about",
+            "experience",
+            "projects",
+            "contact"
+        ],
+        "leftNavIconList": [
+            "fa-house",
+            "fa-user",
+            "fa-building",
+            "fa-layer-group",
+            "fa-message"
+        ],
+        "rightNavList": [
+            "settings"
+        ],
+        "rightNavIconList": [
+            "fa-gear"
+        ],
+        "languageOptionsValueList": [
+            "en",
+            "es",
+            "ge",
+            "fr"
+        ],
+        "languageOptionsKeyList": [
+            "english",
+            "spanish",
+            "german",
+            "french"
+        ]
     },
     "header": {
         "profile": "Softwareentwickler",
@@ -33,6 +71,25 @@
     },
     "certificate": {
         "by": "Von ",
+        "titleList": [
+            "javaFSLvl32025",
+            "extraMile2024",
+            "fireFighter2022",
+            "javaFSLvl22022",
+            "javaFSLvl12021",
+            "awsCCP2021"
+        ],
+        "fileNameList": [
+            "Java_Full_Stack_Level_3.pdf",
+            "Extra_Mile_2024.pdf",
+            "Fire_Fighter_2022.pdf",
+            "Java_Full_Stack_Level_2.pdf",
+            "Java_Full_Stack_Level_1.pdf",
+            "AWS_CCP.pdf"
+        ],
+        "javaFSLvl32025Date": "Sep 2025",
+        "javaFSLvl32025Title": "Java - JavaScript Full Stack Level 3",
+        "javaFSLvl32025By": "Capgemini",
         "extraMile2024Date": "Dez 2024",
         "extraMile2024Title": "Anerkennung – Extra Mile",
         "extraMile2024By": "Capgemini Indien & Spanien",
@@ -51,6 +108,11 @@
         "fallbackPDFOpening": "Dieser Browser unterstützt keine PDFs. Bitte laden Sie das PDF herunter, um es anzusehen:"
     },
     "education": {
+        "titleList": [
+            "btech",
+            "class12",
+            "class10"
+        ],
         "btechTitle": "Bachelor of Technology, Informatik & Ingenieurwesen (CSE)",
         "btechMarks": "8.02 Notendurchschnitt (CGPA)",
         "btechFrom": "Guru Gobind Singh Indraprastha Universität (GGSIPU), Delhi",
@@ -66,9 +128,57 @@
         "jsFrameworks": "JavaScript-Frameworks",
         "tools": "Werkzeuge",
         "database": "Datenbanken",
-        "versionControl": "Versionskontrolle"
+        "versionControl": "Versionskontrolle",
+        "skillsList": {
+            "programmingLang": [
+                "JavaScript",
+                "TypeScript",
+                "HTML",
+                "CSS",
+                "SCSS",
+                "Java 8",
+                "XML"
+            ],
+            "jsFrameworks": [
+                "Vue.js",
+                "Angular",
+                "Sencha Ext JS"
+            ],
+            "tools": [
+                "Visual Studio Code",
+                "IntelliJ IDEA",
+                "Postman",
+                "pgAdmin",
+                "Android Studio",
+                "Unity",
+                "Vuforia"
+            ],
+            "database": [
+                "PostgreSQL"
+            ],
+            "versionControl": [
+                "Git"
+            ]
+        }
     },
     "projects": {
+        "titleList": [
+            "portfolio",
+            "quizNewsApp",
+            "printMediaApp"
+        ],
+        "linkList": [
+            "https://github.com/VermaNikunj/portfolio-website",
+            "https://github.com/VermaNikunj/QuizNewsApp",
+            "https://github.com/VermaNikunj/Interactive-Print-Media"
+        ],
+        "defaultLink": "https://github.com/VermaNikunj",
+        "ariaLabelList": [
+            "portfolio website github link",
+            "quiz news app github link",
+            "interactive project media app using AR github link"
+        ],
+        "defaultAriaLabel": "Project link",
         "portfolioTitle": "Portfolio-Website",
         "portfolioDesc": "Persönliche Portfolio-Website entworfen und entwickelt, um Projekte und Fähigkeiten ohne Frameworks zu präsentieren. Der Fokus lag auf einer leichten, reaktionsfähigen und benutzerfreundlichen Erfahrung.",
         "portfolioDate": "März 2025",
@@ -80,22 +190,37 @@
         "printMediaAppTitle": "Interaktive Print-Media-App mit Augmented Reality (AR)",
         "printMediaAppDesc": "Eine AR-Mobile-App, die beim Scannen eines Fotos oder Artikels ein zugehöriges Video anzeigt, sodass das Video das Bild ersetzt.",
         "printMediaAppDate": "Okt 2019",
-        "printMediaAppTech": "Unity, Vuforia Engine, Vuforia Database, Android SDK, VuMark, VS Code und Adobe Illustrator"
+        "printMediaAppTech": "Unity, Vuforia Engine, Vuforia Database, Android SDK, VuMark, VS Code and Adobe Illustrator"
     },
     "experience": {
-        "capgDate": "März 2021 - heute",
-        "capgTitle": "Berater, Capgemini",
-        "capgProfile4Title": "Berater",
-        "capgProfile4Date": "Apr 2025 - heute",
-        "capgProfile3Title": "Associate Consultant",
-        "capgProfile3Date": "Apr 2023 - März 2025",
-        "capgProfile2Title": "Senior Analyst",
-        "capgProfile2Date": "Okt 2022 - März 2023",
-        "capgProfile1Title": "Analyst",
-        "capgProfile1Date": "März 2021 - Sep 2022",
         "roleAndResponsibilites": "Rolle und Verantwortlichkeiten",
         "additionalResponsibilities": "Zusätzliche Verantwortlichkeiten",
-        "capgRoleDesc": "<li>Arbeit an mehreren Projekten für einen globalen Einzelhandelskunden, Bereitstellung von Lösungen für über 1.500 Filialen weltweit.</li><li>Entwurf und Entwicklung responsiver Frontend-Oberflächen von der Anforderung bis zur Produktfreigabe.</li><li>Gewährleistung einer nahtlosen Benutzererfahrung auf Desktop, Tablet und Mobilgeräten mit Unterstützung für Internationalisierung (i18n).</li><li>Erstellung wiederverwendbarer Komponenten zur Reduzierung der Entwicklungszeit neuer Funktionen um 40 %.</li><li>Behebung kritischer Probleme und Reduzierung von Produktionsvorfällen um 75 % durch Code-Optimierung.</li><li>Teilnahme an Architektur-Diskussionen zur Verbesserung des Designs und der technischen Strategie der Anwendung.</li><li>Zusammenarbeit mit funktionsübergreifenden Teams zur Anforderungserhebung und Entwicklung innovativer Frontend-Lösungen.</li><li>Beitrag sowohl zur Frontend- als auch Backend-Entwicklung in den Anfangsphasen des Projekts.</li>",
-        "capgRoleDescAdditional": "<li>Leitung des Entwicklungsteams zur Sicherstellung der fristgerechten Lieferung hochwertiger Ergebnisse.</li><li>Wöchentliche Kommunikation mit dem Kunden über Projektstatus, Anforderungen und Produktvorführungen.</li><li>Code-Reviews durchgeführt und über 10 Junior-Entwickler betreut, mit Fokus auf Codequalität und Einhaltung von Standards.</li>"
+        "capgDate": "März 2021 - heute",
+        "capgTitle": "Berater, Capgemini",
+        "capgProfileTitle_4": "Berater",
+        "capgProfileDate_4": "Apr 2025 - heute",
+        "capgProfileTitle_3": "Associate Consultant",
+        "capgProfileDate_3": "Apr 2023 - März 2025",
+        "capgProfileTitle_2": "Senior Analyst",
+        "capgProfileDate_2": "Okt 2022 - März 2023",
+        "capgProfileTitle_1": "Analyst",
+        "capgProfileDate_1": "März 2021 - Sep 2022",
+        "capgContent": [
+            "roleAndResponsibilites",
+            "additionalResponsibilities"
+        ],
+        "numberOfcapgroleAndResponsibilites": 8,
+        "numberOfcapgadditionalResponsibilities": 3,
+        "capgroleAndResponsibilites_1": "Mitarbeit an mehreren Projekten für einen globalen Einzelhandelskunden; Entwicklung von Lösungen für über 1.500 Filialen weltweit.",
+        "capgroleAndResponsibilites_2": "Entwicklung responsiver Frontend-Oberflächen von der Anforderungsanalyse bis zur Produktionsfreigabe.",
+        "capgroleAndResponsibilites_3": "Sicherstellung einer nahtlosen Benutzererfahrung auf Desktop-, Tablet- und Mobilgeräten mit Unterstützung für Internationalisierung (i18n).",
+        "capgroleAndResponsibilites_4": "Entwicklung wiederverwendbarer Komponenten; Reduzierung der Entwicklungszeit für neue Funktionen um 40 %.",
+        "capgroleAndResponsibilites_5": "Diagnose und Behebung kritischer Probleme; Reduzierung von Produktionsvorfällen um 75 % durch Codeoptimierung.",
+        "capgroleAndResponsibilites_6": "Teilnahme an Architekturdiskussionen zur Verbesserung von Anwendungsdesign, Funktionalität und technischen Strategien.",
+        "capgroleAndResponsibilities_7": "Zusammenarbeit mit funktionsübergreifenden Teams zur Anforderungserhebung und Entwicklung innovativer Frontend-Lösungen.",
+        "capgroleAndResponsibilities_8": "Mitarbeit an der Frontend- und Backend-Entwicklung in den ersten Projektphasen.",
+        "capgadditionalResponsibilities_1": "Leitung des Entwicklungsteams und Sicherstellung der termingerechten Lieferung qualitativ hochwertiger Ergebnisse.",
+        "capgadditionalResponsibilities_2": "Wöchentliche Kundenkommunikation zu Projektstatus-Updates, Anforderungsbesprechungen und Produktdemonstrationen.",
+        "capgadditionalResponsibilities_3": "Durchführung von Code-Reviews und Mentoring von über 10 Junior-Entwicklern mit Fokus auf Codequalität und Einhaltung von Standards."
     }
 }

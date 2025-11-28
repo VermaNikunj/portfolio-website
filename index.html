@@ -1,60 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <link href="assets/images/favicon.jpeg" type="image/x-icon" rel="icon" />
-        <link rel="stylesheet" href="style.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
-        <script src="./main.js"></script>
-        <title>Portfolio</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="Nikunj Verma's portfolio website">
-    </head>
-    <body>
-        <!-- ---------- Navigation ---------- -->
-        <span class="anchor-offset" id="navigation"></span>
-        <div id="navigation" class="navigation" data-component="navigation.html"></div>
-        
-        <!-- ---------- Header ---------- -->
-        <span class="anchor-offset" id="header"></span>
-        <div id="header" class="header" data-component="header.html"></div>
-        
-        <!-- ---------- About ---------- -->
-        <span class="anchor-offset" id="about"></span>
-        <h1 class="sub-title" data-i18n="navigation.about"></h1>
-        <section id="about" class="about" data-component="about.html"></section>
-        
-        <!-- ---------- Skills ---------- -->
-        <span class="anchor-offset" id="skills"></span>
-        <h1 class="sub-title" data-i18n="navigation.skills"></h1>
-        <section id="skills" class="skills" data-component="skills.html"></section>
-        
-        <!-- ---------- Experience ---------- -->
-        <span class="anchor-offset" id="timeline"></span>
-        <h1 class="sub-title" data-i18n="navigation.experience"></h1>
-        <section id="timeline" class="timeline" data-component="experience.html" data-lazy="1"></section>
-        
-        <!-- ---------- Certificate ---------- -->
-        <span class="anchor-offset" id="certificate"></span>
-        <h1 class="sub-title" data-i18n="navigation.certificate"></h1>
-        <section id="certificate" class="certificate" data-component="certificate.html" data-lazy="1"></section>
-        
-        <!-- ---------- Portfolio ---------- -->
-        <span class="anchor-offset" id="portfolio"></span>
-        <h1 class="sub-title" data-i18n="navigation.projects"></h1>
-        <section id="portfolio" class="portfolio" data-component="projects.html" data-lazy="1"></section>
-        
-        <!-- ---------- Education ---------- -->
-        <span class="anchor-offset" id="education"></span>
-        <h1 class="sub-title" data-i18n="navigation.education"></h1>
-        <section id="education" class="education" data-component="education.html" data-lazy="1"></section>
-        
-        <!-- ---------- Contact ---------- -->
-        <span class="anchor-offset" id="contact"></span>
-        <h1 class="sub-title" data-i18n="navigation.contact"></h1>
-        <section id="contact" class="contact" data-component="contact.html" data-lazy="1"></section>
-        
-        <button class="btn goToTopBtn" id="goToTopBtn" title="Go to top" onclick="topFunction()">
-            <i class="fa-solid fa-arrow-up-long"></i>
-        </button>
-    </body>
+	<head>
+		<link href="assets/images/favicon.jpeg" type="image/x-icon" rel="icon" />
+		<link rel="stylesheet" href="style.css" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+		<script src="./main.js"></script>
+		<script src="./utils/imports.js"></script>
+		<title>Portfolio</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="description" content="Nikunj Verma's portfolio website" />
+	</head>
+	<body>
+		<!-- ---------- Navigation ---------- -->
+		<span class="anchor-offset" id="navigation"></span>
+		<div id="navigation-component" class="navigation" data-component="navigation"></div>
+
+		<!-- ---------- Header ---------- -->
+		<span class="anchor-offset" id="header"></span>
+		<div id="header-component" class="header" data-component="header"></div>
+
+		<!-- ---------- About ---------- -->
+		<span class="anchor-offset" id="about"></span>
+		<h1 class="sub-title" data-i18n="navigation.about"></h1>
+		<section id="about-component" class="about" data-component="about"></section>
+
+		<!-- ---------- Skills ---------- -->
+		<span class="anchor-offset" id="skills"></span>
+		<h1 class="sub-title" data-i18n="navigation.skills"></h1>
+		<section id="skills-component" class="skills"></section>
+
+		<!-- ---------- Experience ---------- -->
+		<span class="anchor-offset" id="experience"></span>
+		<h1 class="sub-title" data-i18n="navigation.experience"></h1>
+		<section id="experience-component" class="experience" data-lazy="1"></section>
+
+		<!-- ---------- Certificate ---------- -->
+		<span class="anchor-offset" id="certificate"></span>
+		<h1 class="sub-title" data-i18n="navigation.certificate"></h1>
+		<section id="certificate-component" class="certificate" data-component="certificate" data-lazy="1"></section>
+
+		<!-- ---------- Projects ---------- -->
+		<span class="anchor-offset" id="projects"></span>
+		<h1 class="sub-title" data-i18n="navigation.projects"></h1>
+		<section id="projects-component" class="projects" data-lazy="1"></section>
+
+		<!-- ---------- Education ---------- -->
+		<span class="anchor-offset" id="education"></span>
+		<h1 class="sub-title" data-i18n="navigation.education"></h1>
+		<section id="education-component" class="education" data-lazy="1"></section>
+
+		<!-- ---------- Contact ---------- -->
+		<span class="anchor-offset" id="contact"></span>
+		<h1 class="sub-title" data-i18n="navigation.contact"></h1>
+		<section id="contact-component" class="contact" data-component="contact" data-lazy="1"></section>
+
+		<button class="btn goToTopBtn" id="goToTopBtn" title="Go to top" onclick="topFunction()">
+			<i class="fa-solid fa-arrow-up-long"></i>
+		</button>
+	</body>
 </html>

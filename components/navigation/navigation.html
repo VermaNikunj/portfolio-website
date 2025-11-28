@@ -1,0 +1,16 @@
+<div class="navigation-container">
+	<nav></nav>
+	<div class="setting-menu" id="setting-menu" onmouseleave="openSettingMenu()">
+		<button class="btn theme-toggle-btn" type="button" onclick="themeToggleEvent()">
+			<span class="dark-theme-btn">
+				<i class="far fa-sun"></i>
+				<span data-i18n="navigation.theme"></span>
+			</span>
+			<span class="light-theme-btn active">
+				<span data-i18n="navigation.theme"></span>
+				<i class="fas fa-moon"></i>
+			</span>
+		</button>
+		<select id="language" name="language" class="language-select" onchange="languageChangeEvent()"></select>
+	</div>
+</div>

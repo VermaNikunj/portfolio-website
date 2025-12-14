@@ -183,10 +183,11 @@ async function callImportedAndLoadLang(textData, isStart) {
 	if (isStart) {
 		await importComponent(textData)
 		loadCertificateShowComponent(textData?.certificate)
+		var form = document.getElementById('contactForm')
+		form.addEventListener('submit', contactFormSubmit)
 	}
 	setLoadedLanguageText(textData)
 }
-
 
 function loadCertificateShowComponent(textData) {
 	const certificatePreviewElement = document.getElementById('certificate-preview')
@@ -212,4 +213,42 @@ function loadCertificateShowComponent(textData) {
 		objectElement.append(spanElement, anchorElement)
 		certificatePreviewElement.appendChild(objectElement)
 	}
+}
+
+async function contactFormSubmit(event) {
+	event.preventDefault()
+	let form = document.getElementById('contactForm')
+	let status = document.getElementById('contactFormStatus')
+	let data = new FormData(event.target)
+	status.innerHTML = 'Form Processing. Please wait.'
+	let submitBtn = document.getElementById('contactFormSubmitButton')
+	submitBtn.classList.add('waitCursor')
+	await fetch(event.target.action, {
+		method: form.method,
+		body: data,
+		headers: {
+			Accept: 'application/json',
+		},
+	})
+		.then((response) => {
+			if (response.ok) {
+				status.innerHTML = 'Thanks for your submission!'
+				form.reset()
+			} else {
+				response.json().then((data) => {
+					if (Object.hasOwn(data, 'errors')) {
+						status.innerHTML = data['errors'].map((error) => error['message']).join(', ')
+					} else {
+						status.innerHTML = 'Oops! There was a problem submitting your form'
+					}
+				})
+			}
+		})
+		.catch((err) => {
+			console.error(`Error in submit contact form ${err}`)
+			status.innerHTML = 'Oops! There was a problem submitting your form'
+		})
+		.finally(() => {
+			submitBtn.classList.remove('waitCursor')
+		})
 }

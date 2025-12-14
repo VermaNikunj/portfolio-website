@@ -36,11 +36,14 @@
 		</button>
 	</div>
 	<div class="contact-right">
-		<form>
+		<form id="contactForm" action="https://formspree.io/f/xldqvlde" method="POST">
 			<input type="text" name="name" placeholder="Your name" required />
 			<input type="email" name="email" placeholder="Your email" required />
-			<textarea name="Message" rows="4" placeholder="Your message"></textarea>
-			<button type="submit" class="btn submitBtn" data-i18n="main.submit"></button>
+			<textarea name="message" rows="4" placeholder="Your message"></textarea>
+			<div>
+				<button class="btn submitBtn" data-i18n="main.submit" id="contactFormSubmitButton"></button>
+				<span class="contact-form-status" id="contactFormStatus"></span>
+			</div>
 		</form>
 	</div>
 </div>

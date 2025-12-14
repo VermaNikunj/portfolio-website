@@ -818,6 +818,7 @@ nav ul li {
 }
 
 .contact-right form .submitBtn {
+	display: inline;
 	margin: 5px 0;
 	font-size: 14px;
 	background: var(--btn-bg);
@@ -850,4 +851,13 @@ form textarea {
 
 form textarea {
 	resize: none;
+}
+
+.contact-form-status {
+	margin-left: 10px;
+	color: var(--text-color);
+}
+
+.waitCursor {
+	cursor: wait;
 }

@@ -6,7 +6,7 @@ function loadCertificateList(textData) {
 	const certificateContainer = document.querySelector('.certificate-row')
 	const titleList = textData.titleList
 	const fileNameList = textData.fileNameList
-	let certificateListElement = document.createDocumentFragment()
+	const certificateListElement = document.createDocumentFragment()
 	for (let i = 0; i < titleList.length; i++) {
 		const title = titleList[i]
 		const fileName = fileNameList[i]

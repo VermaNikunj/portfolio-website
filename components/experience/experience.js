@@ -5,7 +5,7 @@ export function experienceComponentFunction(textData) {
 
 function loadExperienceList(textData, componentElement) {
 	const expList = textData.list
-	let experienceListElement = document.createElement('div')
+	const experienceListElement = document.createElement('div')
 	experienceListElement.classList.add('experience-item')
 	for (let i = 0; i < expList.length; i++) {
 		const title = expList[i]

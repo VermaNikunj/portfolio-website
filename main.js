@@ -183,7 +183,7 @@ async function callImportedAndLoadLang(textData, isStart) {
 	if (isStart) {
 		await importComponent(textData)
 		loadCertificateShowComponent(textData?.certificate)
-		var form = document.getElementById('contactForm')
+		const form = document.getElementById('contactForm')
 		form.addEventListener('submit', contactFormSubmit)
 	}
 	setLoadedLanguageText(textData)
@@ -217,12 +217,12 @@ function loadCertificateShowComponent(textData) {
 
 async function contactFormSubmit(event) {
 	event.preventDefault()
-	let form = document.getElementById('contactForm')
-	let status = document.getElementById('contactFormStatus')
-	let data = new FormData(event.target)
-	status.innerHTML = 'Form Processing. Please wait.'
-	let submitBtn = document.getElementById('contactFormSubmitButton')
 	submitBtn.classList.add('waitCursor')
+	const form = document.getElementById('contactForm')
+	const status = document.getElementById('contactFormStatus')
+	const data = new FormData(event.target)
+	status.textContent = 'Form Processing. Please wait.'
+	const submitBtn = document.getElementById('contactFormSubmitButton')
 	await fetch(event.target.action, {
 		method: form.method,
 		body: data,
@@ -232,21 +232,21 @@ async function contactFormSubmit(event) {
 	})
 		.then((response) => {
 			if (response.ok) {
-				status.innerHTML = 'Thanks for your submission!'
+				status.textContent = 'Thanks for your submission!'
 				form.reset()
 			} else {
 				response.json().then((data) => {
 					if (Object.hasOwn(data, 'errors')) {
-						status.innerHTML = data['errors'].map((error) => error['message']).join(', ')
+						status.textContent = data['errors'].map((error) => error['message']).join(', ')
 					} else {
-						status.innerHTML = 'Oops! There was a problem submitting your form'
+						status.textContent = 'Oops! There was a problem submitting your form'
 					}
 				})
 			}
 		})
 		.catch((err) => {
 			console.error(`Error in submit contact form ${err}`)
-			status.innerHTML = 'Oops! There was a problem submitting your form'
+			status.textContent = 'Oops! There was a problem submitting your form'
 		})
 		.finally(() => {
 			submitBtn.classList.remove('waitCursor')

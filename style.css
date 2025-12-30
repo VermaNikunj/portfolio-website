@@ -54,6 +54,14 @@ body.light-theme {
 	margin: 40px 0 20px 40px;
 }
 
+.sub-title-section {
+	max-width: 100%;
+	color: var(--text-shadow-color);
+	background-color: var(--bg-color-1);
+	padding: 30px;
+	border-radius: 8px;
+}
+
 .margin-top-30 {
 	margin-top: 30px;
 }
@@ -107,7 +115,6 @@ nav {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	flex-wrap: wrap;
 }
 
 nav ul li {
@@ -233,14 +240,6 @@ nav ul li {
 }
 
 /* ---------- About ---------- */
-.about {
-	max-width: 100%;
-	color: var(--text-shadow-color);
-	background-color: var(--bg-color-1);
-	padding: 30px;
-	border-radius: 8px;
-}
-
 .about-row {
 	display: flex;
 	justify-content: space-between;
@@ -267,22 +266,13 @@ nav ul li {
 }
 
 /* ---------- Skills ---------- */
-.skills {
-	max-width: 100%;
-	background-color: var(--bg-color-1);
-	padding: 30px;
-	border-radius: 8px;
-}
-
 .skills-row {
-	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
 	gap: 20px;
 }
 
 .skills-col {
-	width: 32.1%;
 	background-color: var(--bg-color-2);
 	border: 2px solid var(--bg-text-color-8);
 	padding: 10px;
@@ -333,13 +323,9 @@ nav ul li {
 
 /* ---------- Experience ---------- */
 .experience {
-	max-width: 100%;
 	position: relative;
 	display: flex;
 	flex-direction: column;
-	background-color: var(--bg-color-1);
-	padding: 30px;
-	border-radius: 8px;
 }
 
 .experience::before {
@@ -496,16 +482,10 @@ nav ul li {
 }
 
 /* ---------- Certificate ---------- */
-.certificate {
-	max-width: 100%;
-	background-color: var(--bg-color-1);
-	padding: 30px;
-	border-radius: 8px;
-}
-
 .certificate-container {
 	display: flex;
 	flex-direction: row;
+	flex-wrap: wrap;
 	gap: 50px;
 }
 
@@ -567,9 +547,11 @@ nav ul li {
 }
 
 .certificate-preview {
-	flex: 1.5;
+	flex: 1.25 1 auto;
 	border: 5px solid var(--bg-color-1);
 	border-radius: 10px;
+	min-height: 30em;
+	max-height: 100%;
 }
 
 .certificate-preview span {
@@ -587,21 +569,13 @@ nav ul li {
 }
 
 /* -------------projects -------- */
-.projects {
-	max-width: 100%;
-	background-color: var(--bg-color-1);
-	padding: 30px;
-	border-radius: 8px;
-}
-
 .projects-row {
-	display: flex;
-	flex-wrap: wrap;
-	gap: 40px;
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+	gap: 20px;
 }
 
 .projects-col {
-	flex: 1;
 	background-color: var(--bg-color-2);
 	border: 2px solid var(--bg-color-1);
 	border-radius: 10px;
@@ -696,13 +670,6 @@ nav ul li {
 }
 
 /* ------- Education-------- */
-.education {
-	max-width: 100%;
-	background-color: var(--bg-color-1);
-	padding: 30px;
-	border-radius: 8px;
-}
-
 .education-row {
 	display: flex;
 	flex: 1;
@@ -745,22 +712,15 @@ nav ul li {
 }
 
 /* ---------- Contact ---------- */
-.contact {
-	max-width: 100%;
-	color: var(--text-shadow-color);
-	background-color: var(--bg-color-1);
-	padding: 30px;
-	border-radius: 8px;
-}
-
 .contact-row {
 	display: flex;
 	flex-direction: row;
+	flex-wrap: wrap;
 	gap: 20px;
 }
 
 .contact-left {
-	flex: 4;
+	flex: 1 1 auto;
 	display: flex;
 	flex-direction: column;
 	gap: 20px;
@@ -787,7 +747,7 @@ nav ul li {
 }
 
 .contact-right {
-	flex: 6;
+	flex: 1.5 1 auto;
 }
 
 .social-icons {

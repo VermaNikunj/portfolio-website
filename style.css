@@ -760,7 +760,7 @@ nav ul li {
 	display: flex;
 	flex-direction: column;
 	gap: 20px;
-	font-size: 24px;
+	font-size: 1.5em;
 	transition: transform 0.5s;
 }
 
@@ -871,4 +871,7 @@ form textarea {
 	.experience-item::before {
 		display: none;
 	}
+	 .experience-item {
+		flex-direction: column;
+	 }
 }

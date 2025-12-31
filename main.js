@@ -219,12 +219,12 @@ function loadCertificateShowComponent(textData) {
 
 async function contactFormSubmit(event) {
 	event.preventDefault()
-	submitBtn.classList.add('waitCursor')
 	const form = document.getElementById('contactForm')
 	const status = document.getElementById('contactFormStatus')
 	const data = new FormData(event.target)
 	status.textContent = 'Form Processing. Please wait.'
 	const submitBtn = document.getElementById('contactFormSubmitButton')
+	submitBtn.classList.add('waitCursor')
 	await fetch(event.target.action, {
 		method: form.method,
 		body: data,

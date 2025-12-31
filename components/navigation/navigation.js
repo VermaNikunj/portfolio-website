@@ -1,5 +1,6 @@
 export function navigationComponentFunction(textData) {
 	loadNavList(textData)
+	loadNavContainerList(textData)
 	loadLanguageOptions(textData)
 }
 
@@ -21,14 +22,30 @@ function getLeftULHTML(textData) {
 	return leftULElement
 }
 
+function loadNavContainerList(textData) {
+	const navigationContainerTag = document.querySelector('.navigation-container')
+
+	if (navigationContainerTag) {
+		navigationContainerTag.appendChild(getCollapseLeftULHTML(textData))
+	}
+}
+
+function getCollapseLeftULHTML(textData) {
+	const { leftNavList, leftNavIconList } = textData
+	const leftULElement = getCollapseULElement(leftNavList, leftNavIconList)
+	return leftULElement
+}
+
 function getRightULHTML(textData) {
 	const { rightNavList, rightNavIconList } = textData
 	const rightULElement = getLIElements(rightNavList, rightNavIconList, false)
 	return rightULElement
 }
 
-function getLIElements(navList = [], navIconList, isLeft) {
+function getLIElements(navList = [], navIconList= [], isLeft=false) {
 	const ulElement = document.createElement('ul')
+	ulElement.classList.add(isLeft ? 'left-nav-list' : 'right-nav-list')
+	ulElement.id = isLeft ? 'left-nav-list' : 'right-nav-list'
 	for (let i = 0; i < navList?.length; i++) {
 		const title = navList[i]
 		const icon = navIconList[i]
@@ -77,4 +94,26 @@ function getIconText(icon, title) {
 	const frag = document.createDocumentFragment()
 	frag.append(i, spanElement)
 	return frag
+}
+
+function getCollapseULElement(navList = [], navIconList = []) {
+	const ulElement = document.createElement('ul')
+	ulElement.classList.add('collapse-nav-list')
+	ulElement.id = 'collapseNavList'
+	for (let i = 0; i < navList?.length; i++) {
+		const title = navList[i]
+		const icon = navIconList[i]
+
+		const liElement = document.createElement('li')
+
+		const element = document.createElement('a')
+		element.setAttribute('href', `#${title}`)
+		element.classList.add('nav-item')
+		element.setAttribute('aria-label', `nav ${title}`)
+		element.appendChild(getIconText(icon, title))
+		liElement.appendChild(element)
+		
+		ulElement.appendChild(liElement)
+	}
+	return ulElement
 }

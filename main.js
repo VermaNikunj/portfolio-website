@@ -185,6 +185,8 @@ async function callImportedAndLoadLang(textData, isStart) {
 		loadCertificateShowComponent(textData?.certificate)
 		const form = document.getElementById('contactForm')
 		form.addEventListener('submit', contactFormSubmit)
+		const collapseNavElement = document.getElementById('collapseNavList')
+		collapseNavElement.addEventListener('focusout', openLeftNavigation)
 	}
 	setLoadedLanguageText(textData)
 }
@@ -251,4 +253,9 @@ async function contactFormSubmit(event) {
 		.finally(() => {
 			submitBtn.classList.remove('waitCursor')
 		})
+}
+
+function openLeftNavigation() {
+	const nav = document.getElementById('collapseNavList')
+	nav.style.display = nav.style.display === 'flex' ? 'none' : 'flex'
 }
